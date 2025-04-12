@@ -1,0 +1,504 @@
+nohup: ввод игнорируется
+2025-03-02 12:14:06,397 - DEBUG - /etc/localtime found
+2025-03-02 12:14:06,398 - DEBUG - 1 found:
+ {'/etc/localtime is a symlink to': 'Europe/Moscow'}
+2025-03-02 12:14:06,398 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-02 12:14:06,398 - INFO - Запуск планировщика...
+2025-03-02 12:14:06,399 - INFO - Added job "Обновление новостей каждый день в 12:00" to job store "default"
+2025-03-02 12:14:06,399 - INFO - Scheduler started
+2025-03-02 12:14:06,399 - DEBUG - Looking for jobs to run
+2025-03-02 12:14:06,399 - INFO - Планировщик запущен.
+2025-03-02 12:14:06,400 - DEBUG - Next wakeup is due at 2025-03-03 12:00:00+03:00 (in 85553.599809 seconds)
+2025-03-03 12:00:00,016 - DEBUG - Looking for jobs to run
+2025-03-03 12:00:00,029 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-03 12:00:00 MSK)" (scheduled at 2025-03-03 12:00:00+03:00)
+2025-03-03 12:00:00,034 - DEBUG - Next wakeup is due at 2025-03-04 12:00:00+03:00 (in 86399.965186 seconds)
+2025-03-03 12:00:00,206 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-03 12:00:49,460 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-03 12:00:50,359 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-03 12:01:06,568 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F4ukjunjz11-starshee-pokolenie-ryazani-obuchayut-nav&render=true HTTP/1.1" 200 None
+2025-03-03 12:01:06,711 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-03 12:01:19,282 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F27t46p3oc1-it-laboratorii-dlya-podgotovki-kvalifits&render=true HTTP/1.1" 200 None
+2025-03-03 12:01:19,370 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-03 12:01:33,208 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fsa61n3oiu1-altaiskie-studenti-poznakomilis-s-proekt&render=true HTTP/1.1" 200 None
+2025-03-03 12:01:33,306 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-03 12:02:30,097 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fv70elg93b1-v-tyumenskoi-oblasti-s-uspehom-realizuet&render=true HTTP/1.1" 500 None
+2025-03-03 12:02:30,209 - ERROR - Ошибка 500 при загрузке страницы https://anton-nemkin.ru/tpost/v70elg93b1-v-tyumenskoi-oblasti-s-uspehom-realizuet. Попытка повторного запроса...
+2025-03-03 12:02:32,235 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-03 12:02:45,031 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fv70elg93b1-v-tyumenskoi-oblasti-s-uspehom-realizuet&render=true HTTP/1.1" 200 None
+2025-03-03 12:02:45,149 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-04 12:00:00 MSK)" executed successfully
+2025-03-04 12:00:00,016 - DEBUG - Looking for jobs to run
+2025-03-04 12:00:00,032 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-04 12:00:00 MSK)" (scheduled at 2025-03-04 12:00:00+03:00)
+2025-03-04 12:00:00,053 - DEBUG - Next wakeup is due at 2025-03-05 12:00:00+03:00 (in 86399.946045 seconds)
+2025-03-04 12:00:00,097 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-04 12:00:17,630 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-04 12:00:18,026 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-04 12:01:00,780 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fmeachuvuh1-studenti-kolledzhei-krasnoyarskogo-kraya&render=true HTTP/1.1" 200 None
+2025-03-04 12:01:00,861 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-04 12:02:08,259 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Ftidh4nt641-v-mintsifri-irkutskoi-oblasti-rasskazali&render=true HTTP/1.1" 200 None
+2025-03-04 12:02:08,468 - INFO - Новости не изменились, парсинг пропущен.
+2025-03-04 12:02:08,474 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-05 12:00:00 MSK)" executed successfully
+2025-03-05 12:00:00,010 - DEBUG - Looking for jobs to run
+2025-03-05 12:00:00,029 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-05 12:00:00 MSK)" (scheduled at 2025-03-05 12:00:00+03:00)
+2025-03-05 12:00:00,030 - DEBUG - Next wakeup is due at 2025-03-06 12:00:00+03:00 (in 86399.969360 seconds)
+2025-03-05 12:00:00,074 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-05 12:00:20,339 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-05 12:00:20,732 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-05 12:01:29,891 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fktej63by01-tsifrovaya-rossiya-primet-uchastie-v-tsi&render=true HTTP/1.1" 200 None
+2025-03-05 12:01:30,405 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-05 12:02:08,630 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fjepbevy111-innovatsionnie-idei-molodih-lyudei-nizhn&render=true HTTP/1.1" 200 None
+2025-03-05 12:02:09,063 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-05 12:02:41,636 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F469ax53ud1-vladimirskie-studenti-poznakomilis-s-kar&render=true HTTP/1.1" 200 None
+2025-03-05 12:02:42,092 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-05 12:02:52,785 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F3ryy7opfm1-starshee-pokolenie-ryazani-znakomitsya-s&render=true HTTP/1.1" 200 None
+2025-03-05 12:02:52,934 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-06 12:00:00 MSK)" executed successfully
+2025-03-06 12:00:00,010 - DEBUG - Looking for jobs to run
+2025-03-06 12:00:00,027 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-06 12:00:00 MSK)" (scheduled at 2025-03-06 12:00:00+03:00)
+2025-03-06 12:00:00,053 - DEBUG - Next wakeup is due at 2025-03-07 12:00:00+03:00 (in 86399.946065 seconds)
+2025-03-06 12:00:00,072 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-06 12:00:21,071 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-06 12:00:21,466 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-06 12:00:21,765 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fb19m0kikd1-itogi-raboti-v-sfere-tsifrovizatsii-pred&render=true HTTP/1.1" 401 None
+2025-03-06 12:00:21,786 - ERROR - Ошибка загрузки страницы https://anton-nemkin.ru/tpost/b19m0kikd1-itogi-raboti-v-sfere-tsifrovizatsii-pred: 401
+2025-03-06 12:00:21,804 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-06 12:00:42,840 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F8s1b77rh61-kurskii-gosuniversitet-pobeditel-vseross&render=true HTTP/1.1" 200 None
+2025-03-06 12:00:42,915 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-06 12:01:08,656 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F76x7ogfzp1-glava-mingosupravleniya-astrahanskoi-obl&render=true HTTP/1.1" 200 None
+2025-03-06 12:01:08,721 - INFO - Новости не изменились, парсинг пропущен.
+2025-03-06 12:01:08,727 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-07 12:00:00 MSK)" executed successfully
+2025-03-07 12:00:00,010 - DEBUG - Looking for jobs to run
+2025-03-07 12:00:00,031 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-07 12:00:00 MSK)" (scheduled at 2025-03-07 12:00:00+03:00)
+2025-03-07 12:00:00,048 - DEBUG - Next wakeup is due at 2025-03-08 12:00:00+03:00 (in 86399.951943 seconds)
+2025-03-07 12:00:00,093 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-07 12:00:49,476 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-07 12:00:49,871 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-07 12:01:15,658 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fg3trfkxi11-ryazantsi-poznakomilis-s-pravilami-bezop&render=true HTTP/1.1" 200 None
+2025-03-07 12:01:15,732 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-07 12:01:38,975 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fo4jhoi1z91-v-permskom-krae-prohodit-tsifrovoi-likbe&render=true HTTP/1.1" 200 None
+2025-03-07 12:01:39,146 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-07 12:02:06,056 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fm09itxgiv1-studenti-tambova-poznakomilis-s-tsifrovi&render=true HTTP/1.1" 200 None
+2025-03-07 12:02:06,120 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-07 12:02:49,146 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fh0ivnrit41-shkolniki-saratovskoi-oblasti-poznakomil&render=true HTTP/1.1" 200 None
+2025-03-07 12:02:49,266 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-08 12:00:00 MSK)" executed successfully
+2025-03-08 12:00:00,016 - DEBUG - Looking for jobs to run
+2025-03-08 12:00:00,036 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-08 12:00:00 MSK)" (scheduled at 2025-03-08 12:00:00+03:00)
+2025-03-08 12:00:00,047 - DEBUG - Next wakeup is due at 2025-03-09 12:00:00+03:00 (in 86399.952630 seconds)
+2025-03-08 12:00:00,091 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-08 12:00:33,135 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-08 12:00:34,351 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-08 12:00:57,628 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F22p5x4k7e1-lektsii-po-tsifrovoi-gramotnosti-prohody&render=true HTTP/1.1" 200 None
+2025-03-08 12:00:57,707 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-08 12:01:33,562 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F2pbc029hs1-v-permi-obsudili-voprosi-kiberbezopasnos&render=true HTTP/1.1" 200 None
+2025-03-08 12:01:33,905 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-08 12:01:52,381 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F2lrv2nugb1-povishenie-tsifrovoi-gramotnosti-rossiya&render=true HTTP/1.1" 200 None
+2025-03-08 12:01:52,502 - INFO - Новости не изменились, парсинг пропущен.
+2025-03-08 12:01:52,508 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-09 12:00:00 MSK)" executed successfully
+2025-03-09 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-03-09 12:00:00,031 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-09 12:00:00 MSK)" (scheduled at 2025-03-09 12:00:00+03:00)
+2025-03-09 12:00:00,032 - DEBUG - Next wakeup is due at 2025-03-10 12:00:00+03:00 (in 86399.967066 seconds)
+2025-03-09 12:00:00,072 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-09 12:00:17,277 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-09 12:00:17,702 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-09 12:00:28,264 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F22p5x4k7e1-lektsii-po-tsifrovoi-gramotnosti-prohody&render=true HTTP/1.1" 200 None
+2025-03-09 12:00:28,344 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-09 12:00:39,064 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F2pbc029hs1-v-permi-obsudili-voprosi-kiberbezopasnos&render=true HTTP/1.1" 200 None
+2025-03-09 12:00:39,128 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-09 12:00:51,101 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F2lrv2nugb1-povishenie-tsifrovoi-gramotnosti-rossiya&render=true HTTP/1.1" 200 None
+2025-03-09 12:00:51,264 - INFO - Новости не изменились, парсинг пропущен.
+2025-03-09 12:00:51,270 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-10 12:00:00 MSK)" executed successfully
+2025-03-10 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-03-10 12:00:00,030 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-10 12:00:00 MSK)" (scheduled at 2025-03-10 12:00:00+03:00)
+2025-03-10 12:00:00,031 - DEBUG - Next wakeup is due at 2025-03-11 12:00:00+03:00 (in 86399.968368 seconds)
+2025-03-10 12:00:00,081 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-10 12:00:32,223 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-10 12:00:33,205 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-10 12:00:49,170 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F22p5x4k7e1-lektsii-po-tsifrovoi-gramotnosti-prohody&render=true HTTP/1.1" 200 None
+2025-03-10 12:00:49,233 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-10 12:01:15,512 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F2pbc029hs1-v-permi-obsudili-voprosi-kiberbezopasnos&render=true HTTP/1.1" 200 None
+2025-03-10 12:01:15,662 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-10 12:01:29,884 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F2lrv2nugb1-povishenie-tsifrovoi-gramotnosti-rossiya&render=true HTTP/1.1" 200 None
+2025-03-10 12:01:29,964 - INFO - Новости не изменились, парсинг пропущен.
+2025-03-10 12:01:29,970 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-11 12:00:00 MSK)" executed successfully
+2025-03-11 12:00:00,010 - DEBUG - Looking for jobs to run
+2025-03-11 12:00:00,031 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-11 12:00:00 MSK)" (scheduled at 2025-03-11 12:00:00+03:00)
+2025-03-11 12:00:00,047 - DEBUG - Next wakeup is due at 2025-03-12 12:00:00+03:00 (in 86399.952519 seconds)
+2025-03-11 12:00:00,071 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-11 12:00:18,981 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-11 12:00:19,375 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-11 12:00:37,880 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F9t1inv08o1-v-karelii-podveli-itogi-tsifrovizatsii-g&render=true HTTP/1.1" 200 None
+2025-03-11 12:00:37,947 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-11 12:01:40,810 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fjjhej43lb1-tsifrovaya-rossiya-provodit-uroki-tsifro&render=true HTTP/1.1" 200 None
+2025-03-11 12:01:41,170 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-11 12:02:01,039 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fdz23ryc7s1-v-kirovskoi-oblasti-postroyat-16-novih-s&render=true HTTP/1.1" 200 None
+2025-03-11 12:02:01,202 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-11 12:02:28,466 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fk66g4eppo1-v-kalmikii-startovala-seriya-kinopokazov&render=true HTTP/1.1" 200 None
+2025-03-11 12:02:28,627 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-12 12:00:00 MSK)" executed successfully
+2025-03-12 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-03-12 12:00:00,032 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-12 12:00:00 MSK)" (scheduled at 2025-03-12 12:00:00+03:00)
+2025-03-12 12:00:00,044 - DEBUG - Next wakeup is due at 2025-03-13 12:00:00+03:00 (in 86399.955719 seconds)
+2025-03-12 12:00:00,076 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-12 12:00:41,296 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-12 12:00:41,671 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-12 12:01:13,318 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fdz9xap44z1-v-tomske-prezentovali-dvizhenie-tsifrovi&render=true HTTP/1.1" 200 None
+2025-03-12 12:01:13,372 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-12 12:01:58,321 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fb04z0indp1-chukotskie-studenti-obsudili-rol-zhensch&render=true HTTP/1.1" 200 None
+2025-03-12 12:01:58,634 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-12 12:02:18,812 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Ftz8okkjhr1-v-belgorodskoi-oblasti-proidyot-regional&render=true HTTP/1.1" 200 None
+2025-03-12 12:02:19,201 - INFO - Новости не изменились, парсинг пропущен.
+2025-03-12 12:02:19,206 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-13 12:00:00 MSK)" executed successfully
+2025-03-13 12:00:00,022 - DEBUG - Looking for jobs to run
+2025-03-13 12:00:00,035 - DEBUG - Next wakeup is due at 2025-03-14 12:00:00+03:00 (in 86399.964941 seconds)
+2025-03-13 12:00:00,040 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-14 12:00:00 MSK)" (scheduled at 2025-03-13 12:00:00+03:00)
+2025-03-13 12:00:00,085 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-13 12:00:55,331 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-13 12:00:56,458 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-13 12:01:17,533 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F9gv8n0mx21-karernie-traektorii-molodih-lyudei-v-sfe&render=true HTTP/1.1" 200 None
+2025-03-13 12:01:17,989 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-13 12:01:49,189 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F0bulp0np31-svishe-5-tis-shkolnikov-i-studentov-nauc&render=true HTTP/1.1" 200 None
+2025-03-13 12:01:49,261 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-13 12:03:22,507 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Ftr1yohcxx1-novosibirskaya-oblast-v-tope-samih-tsifr&render=true HTTP/1.1" 200 None
+2025-03-13 12:03:22,574 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-13 12:03:49,553 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fdz9xap44z1-v-tomske-prezentovali-dvizhenie-tsifrovi&render=true HTTP/1.1" 200 None
+2025-03-13 12:03:49,644 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-14 12:00:00 MSK)" executed successfully
+2025-03-14 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-03-14 12:00:00,020 - DEBUG - Next wakeup is due at 2025-03-15 12:00:00+03:00 (in 86399.979727 seconds)
+2025-03-14 12:00:00,025 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-15 12:00:00 MSK)" (scheduled at 2025-03-14 12:00:00+03:00)
+2025-03-14 12:00:00,089 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-14 12:00:12,432 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-14 12:00:12,926 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-14 12:00:27,995 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fnk2hhpsis1-kurs-po-tsifrovoi-gramotnosti-dlya-stars&render=true HTTP/1.1" 200 None
+2025-03-14 12:00:28,129 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-14 12:00:50,791 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F0vens3s7v1-starsheklassnitsi-krasnodarskogo-kraya-p&render=true HTTP/1.1" 200 None
+2025-03-14 12:00:51,044 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-14 12:01:02,217 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fyfdt71s511-permyaki-nauchilis-zaschischat-svoi-pers&render=true HTTP/1.1" 200 None
+2025-03-14 12:01:02,274 - INFO - Новости не изменились, парсинг пропущен.
+2025-03-14 12:01:02,280 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-15 12:00:00 MSK)" executed successfully
+2025-03-15 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-03-15 12:00:00,021 - DEBUG - Next wakeup is due at 2025-03-16 12:00:00+03:00 (in 86399.978332 seconds)
+2025-03-15 12:00:00,027 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-16 12:00:00 MSK)" (scheduled at 2025-03-15 12:00:00+03:00)
+2025-03-15 12:00:00,066 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-15 12:00:15,841 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-15 12:00:16,252 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-15 12:00:42,398 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fs6pyd17tu1-razvitie-kreativnih-industrii-obsudili-n&render=true HTTP/1.1" 200 None
+2025-03-15 12:00:42,469 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-15 12:01:36,477 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fgi81r7mzx1-nizhegorodskaya-oblast-i-respublika-kuba&render=true HTTP/1.1" 200 None
+2025-03-15 12:01:36,798 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-15 12:01:52,339 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fvjmelmhc11-novii-sezon-uroka-tsifri-startoval-v-kal&render=true HTTP/1.1" 200 None
+2025-03-15 12:01:52,406 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-15 12:02:14,781 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fnk2hhpsis1-kurs-po-tsifrovoi-gramotnosti-dlya-stars&render=true HTTP/1.1" 200 None
+2025-03-15 12:02:14,869 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-16 12:00:00 MSK)" executed successfully
+2025-03-16 12:00:00,010 - DEBUG - Looking for jobs to run
+2025-03-16 12:00:00,019 - DEBUG - Next wakeup is due at 2025-03-17 12:00:00+03:00 (in 86399.980845 seconds)
+2025-03-16 12:00:00,024 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-17 12:00:00 MSK)" (scheduled at 2025-03-16 12:00:00+03:00)
+2025-03-16 12:00:00,077 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-16 12:00:15,785 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-16 12:00:16,232 - INFO - Новости не изменились, парсинг пропущен.
+2025-03-16 12:00:16,238 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-17 12:00:00 MSK)" executed successfully
+2025-03-17 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-03-17 12:00:00,022 - DEBUG - Next wakeup is due at 2025-03-18 12:00:00+03:00 (in 86399.977548 seconds)
+2025-03-17 12:00:00,027 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-18 12:00:00 MSK)" (scheduled at 2025-03-17 12:00:00+03:00)
+2025-03-17 12:00:00,052 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-17 12:00:26,271 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-17 12:00:27,078 - INFO - Новости не изменились, парсинг пропущен.
+2025-03-17 12:00:27,083 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-18 12:00:00 MSK)" executed successfully
+2025-03-18 12:00:00,010 - DEBUG - Looking for jobs to run
+2025-03-18 12:00:00,018 - DEBUG - Next wakeup is due at 2025-03-19 12:00:00+03:00 (in 86399.981931 seconds)
+2025-03-18 12:00:00,023 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-19 12:00:00 MSK)" (scheduled at 2025-03-18 12:00:00+03:00)
+2025-03-18 12:00:00,052 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-18 12:00:23,661 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-18 12:00:24,035 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-18 12:00:52,690 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F69jnlumud1-svishe-40-tematicheskih-it-meropriyatii&render=true HTTP/1.1" 200 None
+2025-03-18 12:00:53,166 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-18 12:01:18,460 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fi0tcj5l811-zhitelyam-ivanovo-rasskazali-kak-zaschit&render=true HTTP/1.1" 200 None
+2025-03-18 12:01:18,555 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-18 12:01:36,389 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F4oc59tcll1-permskim-studentam-rasskazali-o-glavnih&render=true HTTP/1.1" 200 None
+2025-03-18 12:01:36,628 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-18 12:02:10,012 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fb8sjs7ins1-tsifrovizatsiyu-stroitelnoi-otrasli-obsu&render=true HTTP/1.1" 200 None
+2025-03-18 12:02:10,131 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-19 12:00:00 MSK)" executed successfully
+2025-03-19 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-03-19 12:00:00,019 - DEBUG - Next wakeup is due at 2025-03-20 12:00:00+03:00 (in 86399.980834 seconds)
+2025-03-19 12:00:00,024 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-20 12:00:00 MSK)" (scheduled at 2025-03-19 12:00:00+03:00)
+2025-03-19 12:00:00,074 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-19 12:00:17,900 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-19 12:00:18,294 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-19 12:00:51,423 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F88d7im9si1-o-tsifrovizatsii-gosupravleniya-rasskaza&render=true HTTP/1.1" 200 None
+2025-03-19 12:00:51,498 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-19 12:01:28,441 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F0vl6uz7y31-rossiiskii-analog-starlink-protestiruet&render=true HTTP/1.1" 200 None
+2025-03-19 12:01:28,698 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-19 12:01:45,072 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fk576tkm7h1-upravleniyu-bpla-obuchat-v-karachaevo-ch&render=true HTTP/1.1" 200 None
+2025-03-19 12:01:45,157 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-19 12:02:10,449 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F50dut64b21-studenti-narodnoi-donetskoi-respubliki-p&render=true HTTP/1.1" 200 None
+2025-03-19 12:02:10,586 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-20 12:00:00 MSK)" executed successfully
+2025-03-20 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-03-20 12:00:00,022 - DEBUG - Next wakeup is due at 2025-03-21 12:00:00+03:00 (in 86399.977877 seconds)
+2025-03-20 12:00:00,027 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-21 12:00:00 MSK)" (scheduled at 2025-03-20 12:00:00+03:00)
+2025-03-20 12:00:00,089 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-20 12:00:28,353 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-20 12:00:28,911 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-20 12:01:06,997 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fhmm1h2ot51-o-pravilah-bezopasnogo-povedeniya-v-inte&render=true HTTP/1.1" 200 None
+2025-03-20 12:01:07,078 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-20 12:02:07,647 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Ftvgex5ofd1-shkolniki-permskogo-kraya-mogut-prisoedi&render=true HTTP/1.1" 200 None
+2025-03-20 12:02:08,080 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-20 12:03:04,658 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fn00j8snbf1-tsifrovoe-razvitie-kurskoi-oblasti-obsud&render=true HTTP/1.1" 500 None
+2025-03-20 12:03:04,751 - ERROR - Ошибка 500 при загрузке страницы https://anton-nemkin.ru/tpost/n00j8snbf1-tsifrovoe-razvitie-kurskoi-oblasti-obsud. Попытка повторного запроса...
+2025-03-20 12:03:06,775 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-20 12:03:39,576 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fn00j8snbf1-tsifrovoe-razvitie-kurskoi-oblasti-obsud&render=true HTTP/1.1" 200 None
+2025-03-20 12:03:39,653 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-20 12:04:25,254 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F5355go3la1-tsifrovizatsiyu-sferi-zdravoohraneniya-o&render=true HTTP/1.1" 200 None
+2025-03-20 12:04:25,421 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-21 12:00:00 MSK)" executed successfully
+2025-03-21 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-03-21 12:00:00,020 - DEBUG - Next wakeup is due at 2025-03-22 12:00:00+03:00 (in 86399.979923 seconds)
+2025-03-21 12:00:00,025 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-22 12:00:00 MSK)" (scheduled at 2025-03-21 12:00:00+03:00)
+2025-03-21 12:00:00,068 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-21 12:00:49,940 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-21 12:00:50,461 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-21 12:01:52,622 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F3js882gjr1-starshee-pokolenie-permi-poznakomilos-s&render=true HTTP/1.1" 200 None
+2025-03-21 12:01:52,745 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-21 12:02:35,704 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fubznfr6u41-studenti-krasnoyarska-poboryutsya-za-zva&render=true HTTP/1.1" 200 None
+2025-03-21 12:02:35,873 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-21 12:03:01,756 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fopre3o4r51-pervii-mezhregionalnii-it-hakaton-proshe&render=true HTTP/1.1" 200 None
+2025-03-21 12:03:01,821 - INFO - Новости не изменились, парсинг пропущен.
+2025-03-21 12:03:01,826 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-22 12:00:00 MSK)" executed successfully
+2025-03-22 12:00:00,010 - DEBUG - Looking for jobs to run
+2025-03-22 12:00:00,019 - DEBUG - Next wakeup is due at 2025-03-23 12:00:00+03:00 (in 86399.980723 seconds)
+2025-03-22 12:00:00,024 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-23 12:00:00 MSK)" (scheduled at 2025-03-22 12:00:00+03:00)
+2025-03-22 12:00:00,068 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-22 12:00:26,390 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-22 12:00:26,764 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-22 12:00:43,915 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fvtpziuf2g1-shkolniki-i-studenti-ufi-nauchilis-pravi&render=true HTTP/1.1" 200 None
+2025-03-22 12:00:43,991 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-22 12:01:04,733 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fv2ze8ftg11-v-kurskoi-oblasti-proshyol-pervii-fidzhi&render=true HTTP/1.1" 200 None
+2025-03-22 12:01:05,038 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-22 12:01:27,118 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F3js882gjr1-starshee-pokolenie-permi-poznakomilos-s&render=true HTTP/1.1" 200 None
+2025-03-22 12:01:27,328 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-22 12:01:46,502 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fubznfr6u41-studenti-krasnoyarska-poboryutsya-za-zva&render=true HTTP/1.1" 200 None
+2025-03-22 12:01:46,741 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-23 12:00:00 MSK)" executed successfully
+2025-03-23 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-03-23 12:00:00,021 - DEBUG - Next wakeup is due at 2025-03-24 12:00:00+03:00 (in 86399.978321 seconds)
+2025-03-23 12:00:00,027 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-24 12:00:00 MSK)" (scheduled at 2025-03-23 12:00:00+03:00)
+2025-03-23 12:00:00,066 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-23 12:00:30,425 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-23 12:00:30,925 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-24 12:00:00 MSK)" executed successfully
+2025-03-24 12:00:00,077 - DEBUG - Looking for jobs to run
+2025-03-24 12:00:00,229 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-24 12:00:00 MSK)" (scheduled at 2025-03-24 12:00:00+03:00)
+2025-03-24 12:00:00,236 - DEBUG - Next wakeup is due at 2025-03-25 12:00:00+03:00 (in 86399.763571 seconds)
+2025-03-24 12:00:00,495 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-24 12:00:45,037 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-24 12:00:46,844 - INFO - Новости не изменились, парсинг пропущен.
+2025-03-24 12:00:46,850 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-25 12:00:00 MSK)" executed successfully
+2025-03-25 12:00:00,044 - DEBUG - Looking for jobs to run
+2025-03-25 12:00:00,054 - DEBUG - Next wakeup is due at 2025-03-26 12:00:00+03:00 (in 86399.945110 seconds)
+2025-03-25 12:00:00,061 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-26 12:00:00 MSK)" (scheduled at 2025-03-25 12:00:00+03:00)
+2025-03-25 12:00:00,106 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-25 12:00:35,616 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-25 12:00:36,834 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-26 12:00:00 MSK)" executed successfully
+2025-03-26 12:00:00,013 - DEBUG - Looking for jobs to run
+2025-03-26 12:00:00,024 - DEBUG - Next wakeup is due at 2025-03-27 12:00:00+03:00 (in 86399.975590 seconds)
+2025-03-26 12:00:00,030 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-27 12:00:00 MSK)" (scheduled at 2025-03-26 12:00:00+03:00)
+2025-03-26 12:00:00,089 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-26 12:01:00,693 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-26 12:01:02,696 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-26 12:03:10,087 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F08c5m4x0x1-ii-baikalskii-it-forum-proidet-v-irkutsk&render=true HTTP/1.1" 200 None
+2025-03-26 12:03:10,508 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-26 12:04:17,019 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F85812k9hn1-v-tomske-provedut-mezhdunarodnii-forum-p&render=true HTTP/1.1" 200 None
+2025-03-26 12:04:17,122 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-26 12:04:59,302 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fsdm5dinlv1-ivanovskie-pensioneri-poznakomilis-s-fun&render=true HTTP/1.1" 200 None
+2025-03-26 12:04:59,577 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-26 12:05:56,583 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fk9e1efpjr1-gosduma-rassmotrit-zakonoproekt-o-razmes&render=true HTTP/1.1" 200 None
+2025-03-26 12:05:57,154 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-27 12:00:00 MSK)" executed successfully
+2025-03-27 12:00:00,012 - DEBUG - Looking for jobs to run
+2025-03-27 12:00:00,024 - DEBUG - Next wakeup is due at 2025-03-28 12:00:00+03:00 (in 86399.975790 seconds)
+2025-03-27 12:00:00,029 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-28 12:00:00 MSK)" (scheduled at 2025-03-27 12:00:00+03:00)
+2025-03-27 12:00:00,094 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-27 12:02:59,231 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-27 12:02:59,484 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-28 12:00:00 MSK)" executed successfully
+2025-03-28 12:00:00,012 - DEBUG - Looking for jobs to run
+2025-03-28 12:00:00,022 - DEBUG - Next wakeup is due at 2025-03-29 12:00:00+03:00 (in 86399.977136 seconds)
+2025-03-28 12:00:00,033 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-29 12:00:00 MSK)" (scheduled at 2025-03-28 12:00:00+03:00)
+2025-03-28 12:00:00,084 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-28 12:00:21,919 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-28 12:00:23,810 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-28 12:00:46,227 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fk1xn9h9cg1-tsifrovizatsiyu-otrasli-zdravoohraneniya&render=true HTTP/1.1" 200 None
+2025-03-28 12:00:46,664 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-28 12:02:45,366 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fn2mdk0ldv1-esche-shest-malih-sel-novosibirskoi-obla&render=true HTTP/1.1" 200 None
+2025-03-28 12:02:45,535 - WARNING - Не удалось найти текст на странице: https://anton-nemkin.ru/tpost/n2mdk0ldv1-esche-shest-malih-sel-novosibirskoi-obla
+2025-03-28 12:02:45,553 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-28 12:03:26,089 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F1vncy635r1-starshee-pokolenie-ryazani-poznakomilos&render=true HTTP/1.1" 200 None
+2025-03-28 12:03:26,424 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-28 12:04:01,573 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F1h6fjruca1-polufinal-chempionata-po-bezopasnosti-v&render=true HTTP/1.1" 200 None
+2025-03-28 12:04:02,316 - WARNING - Не удалось найти текст на странице: https://anton-nemkin.ru/tpost/1h6fjruca1-polufinal-chempionata-po-bezopasnosti-v
+2025-03-28 12:04:02,318 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-29 12:00:00 MSK)" executed successfully
+2025-03-29 12:00:00,010 - DEBUG - Looking for jobs to run
+2025-03-29 12:00:00,018 - DEBUG - Next wakeup is due at 2025-03-30 12:00:00+03:00 (in 86399.981846 seconds)
+2025-03-29 12:00:00,024 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-30 12:00:00 MSK)" (scheduled at 2025-03-29 12:00:00+03:00)
+2025-03-29 12:00:00,055 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-29 12:02:15,722 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-29 12:02:16,429 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-29 12:02:54,302 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fdenm2pixs1-starshee-pokolenie-astrahani-poznakomilo&render=true HTTP/1.1" 200 None
+2025-03-29 12:02:54,700 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-29 12:03:50,620 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F74nue35ld1-tsifrovoi-gramotnosti-nauchilis-studenti&render=true HTTP/1.1" 200 None
+2025-03-29 12:03:50,968 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-29 12:05:17,646 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fdx0ab5fh91-permyaki-uznali-kak-zaschitit-sebya-v-se&render=true HTTP/1.1" 200 None
+2025-03-29 12:05:17,763 - WARNING - Не удалось найти текст на странице: https://anton-nemkin.ru/tpost/dx0ab5fh91-permyaki-uznali-kak-zaschitit-sebya-v-se
+2025-03-29 12:05:17,769 - INFO - Новости не изменились, парсинг пропущен.
+2025-03-29 12:05:17,774 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-30 12:00:00 MSK)" executed successfully
+2025-03-30 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-03-30 12:00:00,022 - DEBUG - Next wakeup is due at 2025-03-31 12:00:00+03:00 (in 86399.977324 seconds)
+2025-03-30 12:00:00,037 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-31 12:00:00 MSK)" (scheduled at 2025-03-30 12:00:00+03:00)
+2025-03-30 12:00:00,073 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-30 12:00:45,805 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-30 12:00:47,967 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-30 12:01:51,306 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fdenm2pixs1-starshee-pokolenie-astrahani-poznakomilo&render=true HTTP/1.1" 500 None
+2025-03-30 12:01:51,580 - ERROR - Ошибка 500 при загрузке страницы https://anton-nemkin.ru/tpost/denm2pixs1-starshee-pokolenie-astrahani-poznakomilo. Попытка повторного запроса...
+2025-03-30 12:01:53,600 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-30 12:02:56,817 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fdenm2pixs1-starshee-pokolenie-astrahani-poznakomilo&render=true HTTP/1.1" 200 None
+2025-03-30 12:02:57,321 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-30 12:03:27,270 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F74nue35ld1-tsifrovoi-gramotnosti-nauchilis-studenti&render=true HTTP/1.1" 200 None
+2025-03-30 12:03:27,763 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-30 12:03:43,893 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fdx0ab5fh91-permyaki-uznali-kak-zaschitit-sebya-v-se&render=true HTTP/1.1" 200 None
+2025-03-30 12:03:43,950 - INFO - Новости не изменились, парсинг пропущен.
+2025-03-30 12:03:43,955 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-03-31 12:00:00 MSK)" executed successfully
+2025-03-31 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-03-31 12:00:00,019 - DEBUG - Next wakeup is due at 2025-04-01 12:00:00+03:00 (in 86399.980414 seconds)
+2025-03-31 12:00:00,025 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-01 12:00:00 MSK)" (scheduled at 2025-03-31 12:00:00+03:00)
+2025-03-31 12:00:00,067 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-03-31 12:00:37,900 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-03-31 12:00:38,305 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-01 12:00:00 MSK)" executed successfully
+2025-04-01 12:00:00,010 - DEBUG - Looking for jobs to run
+2025-04-01 12:00:00,021 - DEBUG - Next wakeup is due at 2025-04-02 12:00:00+03:00 (in 86399.978427 seconds)
+2025-04-01 12:00:00,027 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-02 12:00:00 MSK)" (scheduled at 2025-04-01 12:00:00+03:00)
+2025-04-01 12:00:00,079 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-01 12:00:57,783 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 500 None
+2025-04-01 12:00:57,901 - ERROR - Ошибка загрузки страницы: 500
+2025-04-01 12:00:57,907 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-02 12:00:00 MSK)" executed successfully
+2025-04-02 12:00:00,012 - DEBUG - Looking for jobs to run
+2025-04-02 12:00:00,021 - DEBUG - Next wakeup is due at 2025-04-03 12:00:00+03:00 (in 86399.978941 seconds)
+2025-04-02 12:00:00,026 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-03 12:00:00 MSK)" (scheduled at 2025-04-02 12:00:00+03:00)
+2025-04-02 12:00:00,066 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-02 12:00:26,278 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-04-02 12:00:26,703 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-02 12:01:24,597 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F6uof4ja0g1-bolshie-tsifrovie-igri-proshli-v-permi&render=true HTTP/1.1" 500 None
+2025-04-02 12:01:24,703 - ERROR - Ошибка 500 при загрузке страницы https://anton-nemkin.ru/tpost/6uof4ja0g1-bolshie-tsifrovie-igri-proshli-v-permi. Попытка повторного запроса...
+2025-04-02 12:01:26,727 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-02 12:02:12,539 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F6uof4ja0g1-bolshie-tsifrovie-igri-proshli-v-permi&render=true HTTP/1.1" 200 None
+2025-04-02 12:02:12,623 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-02 12:02:53,512 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fkm10zlpn51-molodezhnii-tsifrovoi-forum-na-ti-s-it-p&render=true HTTP/1.1" 200 None
+2025-04-02 12:02:53,613 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-02 12:03:17,150 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F9zgecsiyn1-veterani-svo-iz-nizhegorodskoi-oblasti-m&render=true HTTP/1.1" 200 None
+2025-04-02 12:03:17,289 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-02 12:04:15,402 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fry1c8k0yk1-urok-tsifri-proshel-v-shkolah-belgorodsk&render=true HTTP/1.1" 500 None
+2025-04-02 12:04:15,428 - ERROR - Ошибка 500 при загрузке страницы https://anton-nemkin.ru/tpost/ry1c8k0yk1-urok-tsifri-proshel-v-shkolah-belgorodsk. Попытка повторного запроса...
+2025-04-02 12:04:17,453 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-02 12:05:13,738 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fry1c8k0yk1-urok-tsifri-proshel-v-shkolah-belgorodsk&render=true HTTP/1.1" 500 None
+2025-04-02 12:05:13,776 - ERROR - Ошибка 500 при загрузке страницы https://anton-nemkin.ru/tpost/ry1c8k0yk1-urok-tsifri-proshel-v-shkolah-belgorodsk. Попытка повторного запроса...
+2025-04-02 12:05:15,802 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-02 12:05:42,980 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fry1c8k0yk1-urok-tsifri-proshel-v-shkolah-belgorodsk&render=true HTTP/1.1" 200 None
+2025-04-02 12:05:43,463 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-03 12:00:00 MSK)" executed successfully
+2025-04-03 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-04-03 12:00:00,018 - DEBUG - Next wakeup is due at 2025-04-04 12:00:00+03:00 (in 86399.981221 seconds)
+2025-04-03 12:00:00,024 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-04 12:00:00 MSK)" (scheduled at 2025-04-03 12:00:00+03:00)
+2025-04-03 12:00:00,078 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-03 12:00:55,148 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-04-03 12:00:56,019 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-03 12:01:21,962 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fejpgfhk2z1-v-krasnodarskom-krae-sozdayut-sovremennu&render=true HTTP/1.1" 200 None
+2025-04-03 12:01:22,134 - INFO - Новости не изменились, парсинг пропущен.
+2025-04-03 12:01:22,139 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-04 12:00:00 MSK)" executed successfully
+2025-04-04 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-04-04 12:00:00,020 - DEBUG - Next wakeup is due at 2025-04-05 12:00:00+03:00 (in 86399.979329 seconds)
+2025-04-04 12:00:00,026 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-05 12:00:00 MSK)" (scheduled at 2025-04-04 12:00:00+03:00)
+2025-04-04 12:00:00,075 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-04 12:00:24,711 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-04-04 12:00:26,159 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-04 12:01:31,901 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Ff3m2337rr1-klyuchevie-trendi-tsifrovizatsii-i-it-im&render=true HTTP/1.1" 200 None
+2025-04-04 12:01:32,225 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-04 12:03:28,220 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F61s6p6x1k1-permskie-studenti-poznakomilis-s-glavnim&render=true HTTP/1.1" 200 None
+2025-04-04 12:03:28,630 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-04 12:03:57,948 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fcu1sjvbu11-s-pravilami-bezopasnosti-v-seti-poznakom&render=true HTTP/1.1" 200 None
+2025-04-04 12:03:58,368 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-04 12:04:48,822 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fpnsscnj5t1-keis-shkolu-po-kiberbezu-zapustili-dlya&render=true HTTP/1.1" 200 None
+2025-04-04 12:04:49,228 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-05 12:00:00 MSK)" executed successfully
+2025-04-05 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-04-05 12:00:00,022 - DEBUG - Next wakeup is due at 2025-04-06 12:00:00+03:00 (in 86399.977219 seconds)
+2025-04-05 12:00:00,028 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-06 12:00:00 MSK)" (scheduled at 2025-04-05 12:00:00+03:00)
+2025-04-05 12:00:00,083 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-05 12:00:24,298 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-04-05 12:00:24,725 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-05 12:00:38,641 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F4hhdfi4ch1-o-pravilah-kiberbeza-i-ugrozah-v-seti-uz&render=true HTTP/1.1" 200 None
+2025-04-05 12:00:38,726 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-05 12:01:13,139 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fn9pskay701-novosibirskie-shkolniki-nauchilis-azam-p&render=true HTTP/1.1" 200 None
+2025-04-05 12:01:14,285 - INFO - Новости не изменились, парсинг пропущен.
+2025-04-05 12:01:14,291 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-06 12:00:00 MSK)" executed successfully
+2025-04-06 12:00:00,010 - DEBUG - Looking for jobs to run
+2025-04-06 12:00:00,021 - DEBUG - Next wakeup is due at 2025-04-07 12:00:00+03:00 (in 86399.978698 seconds)
+2025-04-06 12:00:00,026 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-07 12:00:00 MSK)" (scheduled at 2025-04-06 12:00:00+03:00)
+2025-04-06 12:00:00,081 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-06 12:02:17,094 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-04-06 12:02:18,562 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-07 12:00:00 MSK)" executed successfully
+2025-04-07 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-04-07 12:00:00,021 - DEBUG - Next wakeup is due at 2025-04-08 12:00:00+03:00 (in 86399.978513 seconds)
+2025-04-07 12:00:00,026 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-08 12:00:00 MSK)" (scheduled at 2025-04-07 12:00:00+03:00)
+2025-04-07 12:00:00,073 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-07 12:00:42,223 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-04-07 12:00:42,589 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-08 12:00:00 MSK)" executed successfully
+2025-04-08 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-04-08 12:00:00,023 - DEBUG - Next wakeup is due at 2025-04-09 12:00:00+03:00 (in 86399.976677 seconds)
+2025-04-08 12:00:00,038 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-09 12:00:00 MSK)" (scheduled at 2025-04-08 12:00:00+03:00)
+2025-04-08 12:00:00,088 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-08 12:00:24,630 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-04-08 12:00:25,919 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-08 12:00:52,525 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F79uazd8e41-razvitie-tsifrovoi-ekonomiki-obsudili-v&render=true HTTP/1.1" 200 None
+2025-04-08 12:00:52,591 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-08 12:01:14,067 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F35mhr4gyz1-v-preddverii-dnya-runeta-shkolniki-i-stu&render=true HTTP/1.1" 200 None
+2025-04-08 12:01:14,255 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-08 12:01:32,361 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F4hhdfi4ch1-o-pravilah-kiberbeza-i-ugrozah-v-seti-uz&render=true HTTP/1.1" 200 None
+2025-04-08 12:01:32,437 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-08 12:01:54,523 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fn9pskay701-novosibirskie-shkolniki-nauchilis-azam-p&render=true HTTP/1.1" 200 None
+2025-04-08 12:01:54,634 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-09 12:00:00 MSK)" executed successfully
+2025-04-09 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-04-09 12:00:00,019 - DEBUG - Next wakeup is due at 2025-04-10 12:00:00+03:00 (in 86399.980679 seconds)
+2025-04-09 12:00:00,024 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-10 12:00:00 MSK)" (scheduled at 2025-04-09 12:00:00+03:00)
+2025-04-09 12:00:00,086 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-09 12:00:39,942 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-04-09 12:00:40,357 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-09 12:01:10,805 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fntjj452p51-o-razvitii-interneta-rasskazali-v-kaluzh&render=true HTTP/1.1" 200 None
+2025-04-09 12:01:11,411 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-09 12:01:41,565 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fpa2mk59ax1-kurs-po-tsifrovoi-gramotnosti-dlya-stars&render=true HTTP/1.1" 200 None
+2025-04-09 12:01:42,055 - INFO - Новости не изменились, парсинг пропущен.
+2025-04-09 12:01:42,061 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-10 12:00:00 MSK)" executed successfully
+2025-04-10 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-04-10 12:00:00,022 - DEBUG - Next wakeup is due at 2025-04-11 12:00:00+03:00 (in 86399.977162 seconds)
+2025-04-10 12:00:00,028 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-11 12:00:00 MSK)" (scheduled at 2025-04-10 12:00:00+03:00)
+2025-04-10 12:00:00,068 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-10 12:00:30,421 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-04-10 12:00:30,976 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-10 12:01:02,831 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F3ym3zx6j11-tsifrovoi-likbez-prohodit-v-shkolah-sver&render=true HTTP/1.1" 200 None
+2025-04-10 12:01:02,907 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-10 12:01:55,058 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fo6hiae5h91-s-pravilami-bezopasnogo-povedeniya-v-set&render=true HTTP/1.1" 200 None
+2025-04-10 12:01:55,348 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-10 12:02:30,927 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2F7i8xedv5e1-andrei-vorobev-soobschil-o-vazhnosti-vne&render=true HTTP/1.1" 200 None
+2025-04-10 12:02:31,355 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-10 12:02:49,011 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fntjj452p51-o-razvitii-interneta-rasskazali-v-kaluzh&render=true HTTP/1.1" 200 None
+2025-04-10 12:02:49,089 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-11 12:00:00 MSK)" executed successfully
+2025-04-11 12:00:00,010 - DEBUG - Looking for jobs to run
+2025-04-11 12:00:00,020 - DEBUG - Next wakeup is due at 2025-04-12 12:00:00+03:00 (in 86399.979519 seconds)
+2025-04-11 12:00:00,025 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-12 12:00:00 MSK)" (scheduled at 2025-04-11 12:00:00+03:00)
+2025-04-11 12:00:00,070 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-11 12:00:11,483 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-04-11 12:00:11,879 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-11 12:00:31,060 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fg2klbov3c1-podgotovku-it-kadrov-usilili-v-novosibir&render=true HTTP/1.1" 200 None
+2025-04-11 12:00:31,653 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-11 12:00:47,321 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fh21t3rj0s1-vserossiiskaya-aktsiya-urok-tsifri-proho&render=true HTTP/1.1" 200 None
+2025-04-11 12:00:47,383 - INFO - Новости не изменились, парсинг пропущен.
+2025-04-11 12:00:47,388 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-12 12:00:00 MSK)" executed successfully
+2025-04-12 12:00:00,011 - DEBUG - Looking for jobs to run
+2025-04-12 12:00:00,020 - DEBUG - Next wakeup is due at 2025-04-13 12:00:00+03:00 (in 86399.979854 seconds)
+2025-04-12 12:00:00,025 - INFO - Running job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-13 12:00:00 MSK)" (scheduled at 2025-04-12 12:00:00+03:00)
+2025-04-12 12:00:00,070 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-12 12:00:39,777 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Fdigital_russia&render=true HTTP/1.1" 200 None
+2025-04-12 12:00:40,162 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-12 12:01:05,827 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Flogdi447d1-i-vserossiiskii-onlain-marafon-kosmos-dl&render=true HTTP/1.1" 200 None
+2025-04-12 12:01:05,907 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-12 12:01:23,770 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fg2klbov3c1-podgotovku-it-kadrov-usilili-v-novosibir&render=true HTTP/1.1" 200 None
+2025-04-12 12:01:23,843 - DEBUG - Starting new HTTP connection (1): api.scraperapi.com:80
+2025-04-12 12:01:55,761 - DEBUG - http://api.scraperapi.com:80 "GET /?api_key=a9f900439663e569726c8e975c06ae80&url=https%3A%2F%2Fanton-nemkin.ru%2Ftpost%2Fh21t3rj0s1-vserossiiskaya-aktsiya-urok-tsifri-proho&render=true HTTP/1.1" 200 None
+2025-04-12 12:01:56,081 - INFO - Новости не изменились, парсинг пропущен.
+2025-04-12 12:01:56,086 - INFO - Job "Обновление новостей каждый день в 12:00 (trigger: cron[hour='12', minute='0'], next run at: 2025-04-13 12:00:00 MSK)" executed successfully
