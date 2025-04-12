@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="../static/images/logoDR.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer" />
+    <!--Этот элемент определяет параметры отображения на мобильных устройствах width=device-width указывает, что ширина страницы должна соответствовать ширине устройства, а initial-scale=1.0 задает начальный масштаб отображения-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Панель администратора</title>
+    <link rel="stylesheet" href="../static/css/style2.css"> <!--ИЗМЕНЕНО-->
+    <script type="text/javascript" src="../static/js/script-admin.js"></script> <!--ИЗМЕНЕНО-->
+
+</head>
+
+<body style="margin:0;">
+
+    <div class="header-line-main"> <!--Шапка с менюшкой -->
+        <div style="display: flex; align-items: center;">
+            <img onclick="window.location.href='/auth'" src="../static/images/logoDR.svg"
+                style="width: 4vw; margin-right: 2vw; cursor: pointer;">
+            <p style="font-size: 1.04vw; cursor: default;" onclick="window.location.href='/auth'">Портал российских
+                ИТ-решений</p>
+            <p style="font-size: 1.04vw; cursor: default; margin-left: 7vw;">Админ-панель</p>
+
+
+        </div>
+
+
+        <button id="myButton-burger-menu" onclick="showContent('new-applications-content')"
+            style="display: flex; align-items: center; margin-right: 0vw; cursor: pointer;">
+            Новые заявки
+        </button>
+
+        <button id="myButton-burger-menu" onclick="showContent('edit-applications-content')"
+            style="display: flex; align-items: center; margin-right: 0vw; cursor: pointer;">
+            Редактировать заявку
+        </button>
+
+        <button id="myButton-burger-menu" onclick="showContent('applications-content')"
+            style="display: flex; align-items: center; margin-right: 0vw; cursor: pointer;">
+            Компании в реестре
+        </button>
+
+        <button id="myButton-burger-menu" onclick="showContent('existing-companies-content')"
+            style="display: flex; align-items: center; margin-right: 0vw; cursor: pointer;">
+            Редактировать компанию
+        </button>
+    </div>
+
+    <!-- Компании, которые есть на сайте -->
+    <div id="applications-content" class="content">
+        <table class="table-style">
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Тип</th>
+                    <th>ИНН</th>
+                    <th>Направление</th>
+                    <th>Описание</th>
+                    <th>Продукты</th>
+                    <th>Логотип крупный</th>
+                    <th>Логотип уменьшенный</th>
+                    <th>Фото 1</th>
+                    <th>Фото 2</th>
+                    <th>Фото 3</th>
+                    <th>Видео</th>
+                    <th>Регион</th>
+                    <th>Адресс</th>
+                    <th>Телефон</th>
+                    <th>Telegram</th>
+                    <th>Vk</th>
+                    <th>Rutube</th>
+                    <th>Dzen</th>
+                    <th>Сайт</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                {% for app in companies %}
+                <tr>
+                    <td>{{ app.name }}</td>
+                    <td>{{ app.type }}</td>
+                    <td>{{ app.inn }}</td>
+                    <td>{{ app.short_description }}</td>
+                    <td>{{ app.full_description }}</td>
+                    <td>{{ app.products }}</td>
+                    <td>{{ app.main_logo_url }}</td>
+                    <td>{{ app.logo_url }}</td>
+                    <td>{{ app.photo_1 if app.photo_1 else 'Нет фото' }}</td>
+                    <td>{{ app.photo_2 if app.photo_2 else 'Нет фото' }}</td>
+                    <td>{{ app.photo_3 if app.photo_3 else 'Нет фото' }}</td>
+                    <td>{{ app.video if app.video else 'Нет видео' }}</td>
+                    <td>{{ app.region }}</td>
+                    <td>{{ app.address }}</td>
+                    <td>{{ app.phone }}</td>
+                    <td>{{ app.telegram if app.telegram else 'Нет ссылки'}}</td>
+                    <td>{{ app.vk if app.vk else 'Нет ссылки'}}</td>
+                    <td>{{ app.rutube if app.rutube else 'Нет ссылки'}}</td>
+                    <td>{{ app.dzen if app.dzen else 'Нет ссылки'}}</td>
+                    <td>{{ app.website if app.website else 'Нет ссылки'}}</td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="20">Нет данных</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!--Все новые заявления-->
+    <div id="new-applications-content" class="content" style="display: none;">
+        <table class="table-style">
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Тип</th>
+                    <th>ИНН</th>
+                    <th>Направление</th>
+                    <th>Описание</th>
+                    <th>Продукты</th>
+                    <th>Логотип крупный</th>
+                    <th>Логотип уменьшенный</th>
+                    <th>Фото 1</th>
+                    <th>Фото 2</th>
+                    <th>Фото 3</th>
+                    <th>Видео</th>
+                    <th>Регион</th>
+                    <th>Адресс</th>
+                    <th>Телефон</th>
+                    <th>Telegram</th>
+                    <th>Vk</th>
+                    <th>Rutube</th>
+                    <th>Dzen</th>
+                    <th>Сайт</th>
+                </tr>
+            </thead>
+            <tbody id="table-body-new">
+                {% for app in new_companies %}
+                <tr>
+                    <td>{{ app.name }}</td>
+                    <td>{{ app.type }}</td>
+                    <td>{{ app.inn }}</td>
+                    <td>{{ app.short_description }}</td>
+                    <td>{{ app.full_description }}</td>
+                    <td>{{ app.products }}</td>
+                    <td>{{ app.main_logo_url }}</td>
+                    <td>{{ app.logo_url }}</td>
+                    <td>{{ app.photo_1 if app.photo_1 else 'Нет фото' }}</td>
+                    <td>{{ app.photo_2 if app.photo_2 else 'Нет фото' }}</td>
+                    <td>{{ app.photo_3 if app.photo_3 else 'Нет фото' }}</td>
+                    <td>{{ app.video if app.video else 'Нет видео' }}</td>
+                    <td>{{ app.region }}</td>
+                    <td>{{ app.address }}</td>
+                    <td>{{ app.phone }}</td>
+                    <td>{{ app.telegram if app.telegram else 'Нет ссылки'}}</td>
+                    <td>{{ app.vk if app.vk else 'Нет ссылки'}}</td>
+                    <td>{{ app.rutube if app.rutube else 'Нет ссылки'}}</td>
+                    <td>{{ app.dzen if app.dzen else 'Нет ссылки'}}</td>
+                    <td>{{ app.website if app.website else 'Нет ссылки'}}</td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="20">Нет данных</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!--Редактирование новых заявлений-->
+    <div id="edit-applications-content" class="content" style="display: none; margin-left: 2vw;">
+
+        <div class="Q-admin">
+            <p>Название искомой компании</p>
+            <input type="text" id="newcompany-name" class="report-input" placeholder="Поле для ввода"
+                style="margin-top: 0vw;">
+            <button onclick="searchNewCompany()" class="poisk-b">Поиск</button>
+            <button onclick="approveCompany()" class="poisk-b">Одобрить</button>
+        </div>
+
+        <select class="report-input" id="attribute-select-new">
+            <option value="" selected>Выбери атрибут для изменения</option>
+            <option value="Название">Название</option>
+            <option value="ПО/ПАК">ПО/ПАК</option>
+            <option value="Направление">Направление</option>
+            <option value="ИНН">ИНН</option>
+            <option value="Описание">Описание</option>
+            <option value="Продукты">Продукты</option>
+            <option value="Логотип крупный">Логотип крупный</option>
+            <option value="Логотип уменьшенный">Логотип уменьшенный</option>
+            <option value="Фото 1">Фото 1</option>
+            <option value="Фото 2">Фото 2</option>
+            <option value="Фото 3">Фото 3</option>
+            <option value="Видео">Видео</option>
+            <option value="Регион">Регион</option>
+            <option value="Адресс">Адресс</option>
+            <option value="Телефон">Телефон</option>
+            <option value="Telegram">Telegram</option>
+            <option value="Vk">VK</option>
+            <option value="rutube">Rutube</option>
+            <option value="Яндекс.Дзен">Яндекс.Дзен</option>
+            <option value="Сайт">Сайт</option>
+        </select>
+
+        <div class="Q-admin">
+            <p>Данные из БД</p>
+            <input type="text" id="db-data-new" class="report-input" placeholder="Вывод данных"
+                style="margin-top: 0vw;">
+        </div>
+
+        <div>
+            <!-- Для ПО -->
+            <div class="Q-admin">
+                <p>Классы ПО</p>
+                <div class="search-container">
+                    <div class="search-box">
+                        <div id="selected-tags-1" class="selected-tags"></div>
+                        <!-- Теги классов ПО будут отображаться здесь -->
+                        <div class="StrokaPoisk" id="clickPONAME" onclick="clickPONAME()" style="position: relative;">
+                            <input type="text" id="search-input-1" class="search-input" placeholder="Все">
+                            <svg id="dropdown-icon-1" xmlns="http://www.w3.org/2000/svg" width="0.73vw" height="0.42vw"
+                                viewBox="0 0 14 8" fill="none" style="position: absolute; right: 1vw; top: 1.2vw;">
+                                <path d="M1 0.999999L7 7L13 1" stroke="#1F2B6A" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="dropdown" id="dropdown-1" style="display: none;">
+                            <ul id="dropdown-list-1">
+                                <!-- Список будет добавлен динамически -->
+                            </ul>
+                            <div id="no-results-1" class="no-results" style="display: none;">
+                                По вашему запросу ничего не найдено.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Для ПАК -->
+            <div class="Q-admin">
+                <p>Классы ПАК</p>
+                <div class="search-container">
+                    <div class="search-box">
+                        <div id="selected-tags-4" class="selected-tags"></div>
+                        <!-- Теги классов ПАК будут отображаться здесь -->
+                        <div class="StrokaPoisk" id="clickPAKNAME" onclick="clickPAKNAME()" style="position: relative;">
+                            <input type="text" id="search-input-4" class="search-input"
+                                placeholder="Выберите из списка">
+                            <svg id="dropdown-icon-4" xmlns="http://www.w3.org/2000/svg" width="0.73vw" height="0.42vw"
+                                viewBox="0 0 14 8" fill="none" style="position: absolute; right: 1vw; top: 1.2vw;">
+                                <path d="M1 0.999999L7 7L13 1" stroke="#1F2B6A" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="dropdown" id="dropdown-4" style="display: none;">
+                            <ul id="dropdown-list-4">
+                                <!-- Список будет добавлен динамически -->
+                            </ul>
+                            <div id="no-results-4" class="no-results" style="display: none;">
+                                По вашему запросу ничего не найдено.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkbox Q-admin">
+                <div class="">
+                    <input type="checkbox" id="reg" name="reg" />
+                    <label for="reg" style="padding-top: 0.68vw;">Компания прошла регистрацию в едином реестре
+                        российских программ для ЭВМ и БД.</label>
+                </div>
+            </div>
+
+            <div class="checkbox Q-admin">
+                <div class="">
+                    <input type="checkbox" id="ai" name="ai" />
+                    <label for="ai" style="padding-top: 0.68vw;">Компания создаёт программное обеспечение,
+                        которое относится к сфере искусственного интеллекта.</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="Q-admin" style="margin-top: 2vw;">
+            <p>Отрасли</p>
+            <div class="search-container">
+                <div class="search-box">
+                    <div id="selected-tags-5" class="selected-tags"></div> <!-- Теги будут отображаться здесь -->
+                    <div class="StrokaPoisk" id="clickPAKOTRASL" onclick="clickPAKOTRASL()" style="position: relative;">
+                        <input type="text" id="search-input-5" class="search-input" placeholder="Выберите из списка">
+                        <svg id="dropdown-icon-5" xmlns="http://www.w3.org/2000/svg" width="0.73vw" height="0.42vw"
+                            viewBox="0 0 14 8" fill="none" style="position: absolute; right: 1vw; top: 1.2vw;">
+                            <path d="M1 0.999999L7 7L13 1" stroke="#1F2B6A" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="dropdown" id="dropdown-5" style="display: none;">
+                        <ul id="dropdown-list-5">
+                            <!-- Список будет добавлен динамически -->
+                        </ul>
+                        <div id="no-results-5" class="no-results" style="display: none;">
+                            По вашему запросу ничего не найдено.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="b-admin">
+            <button onclick="deleteNewCompany()">Удалить компанию</button>
+            <button onclick="updateNewCompany()">Обновить данные</button>
+            <button onclick="resetCompany()">Сброс</button>
+        </div>
+
+    </div>
+
+    <!--Существующие компании-->
+    <div id="existing-companies-content" class="content" style="display: none; margin-left: 2vw;">
+        <div class="Q-admin">
+            <p>Название искомой компании</p>
+            <input type="text" id="company-name" class="report-input" placeholder="Поле для ввода"
+                style="margin-top: 0vw;">
+            <button onclick="searchCompany()" class="poisk-b">Поиск</button>
+        </div>
+
+        <select class="report-input" id="attribute-select">
+            <option value="" selected>Выбери атрибут для изменения</option>
+            <option value="Название">Название</option>
+            <option value="ПО/ПАК">ПО/ПАК</option>
+            <option value="Направление">Направление</option>
+            <option value="ИНН">ИНН</option>
+            <option value="Описание">Описание</option>
+            <option value="Продукты">Продукты</option>
+            <option value="Логотип крупный">Логотип крупный</option>
+            <option value="Логотип уменьшенный">Логотип уменьшенный</option>
+            <option value="Фото 1">Фото 1</option>
+            <option value="Фото 2">Фото 2</option>
+            <option value="Фото 3">Фото 3</option>
+            <option value="Видео">Видео</option>
+            <option value="Регион">Регион</option>
+            <option value="Адресс">Адресс</option>
+            <option value="Телефон">Телефон</option>
+            <option value="Telegram">Telegram</option>
+            <option value="Vk">VK</option>
+            <option value="rutube">Rutube</option>
+            <option value="Яндекс.Дзен">Яндекс.Дзен</option>
+            <option value="Сайт">Сайт</option>
+        </select>
+
+        <div class="Q-admin">
+            <p>Данные из БД</p>
+            <input type="text" id="db-data" class="report-input" placeholder="Вывод данных" style="margin-top: 0vw;">
+        </div>
+
+        <div>
+            <!-- Для ПО -->
+            <div class="Q-admin">
+                <p>Классы ПО</p>
+                <div class="search-container">
+                    <div class="search-box">
+                        <div id="selected-tags-2" class="selected-tags"></div>
+                        <!-- Теги классов ПО будут отображаться здесь -->
+                        <div class="StrokaPoisk" id="clickPONAME-2" onclick="clickPONAME2()"
+                            style="position: relative;">
+                            <input type="text" id="search-input-2" class="search-input" placeholder="Все">
+                            <svg id="dropdown-icon-2" xmlns="http://www.w3.org/2000/svg" width="0.73vw" height="0.42vw"
+                                viewBox="0 0 14 8" fill="none" style="position: absolute; right: 1vw; top: 1.2vw;">
+                                <path d="M1 0.999999L7 7L13 1" stroke="#1F2B6A" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="dropdown" id="dropdown-2" style="display: none;">
+                            <ul id="dropdown-list-2">
+                                <!-- Список будет добавлен динамически -->
+                            </ul>
+                            <div id="no-results-2" class="no-results" style="display: none;">
+                                По вашему запросу ничего не найдено.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Для ПАК -->
+            <div class="Q-admin">
+                <p>Классы ПАК</p>
+                <div class="search-container">
+                    <div class="search-box">
+                        <div id="selected-tags-3" class="selected-tags"></div>
+                        <!-- Теги классов ПАК будут отображаться здесь -->
+                        <div class="StrokaPoisk" id="clickPAKNAME" onclick="clickPAKNAME2()"
+                            style="position: relative;">
+                            <input type="text" id="search-input-3" class="search-input"
+                                placeholder="Выберите из списка">
+                            <svg id="dropdown-icon-3" xmlns="http://www.w3.org/2000/svg" width="0.73vw" height="0.42vw"
+                                viewBox="0 0 14 8" fill="none" style="position: absolute; right: 1vw; top: 1.2vw;">
+                                <path d="M1 0.999999L7 7L13 1" stroke="#1F2B6A" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="dropdown" id="dropdown-3" style="display: none;">
+                            <ul id="dropdown-list-3">
+                                <!-- Список будет добавлен динамически -->
+                            </ul>
+                            <div id="no-results-3" class="no-results" style="display: none;">
+                                По вашему запросу ничего не найдено.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkbox Q-admin">
+                <div>
+                    <input type="checkbox" id="reg-1" name="reg-1" />
+                    <label for="reg-1" style="padding-top: 0.68vw;">Компания прошла регистрацию в едином реестре
+                        российских программ для ЭВМ и БД.</label>
+                </div>
+            </div>
+
+            <div class="checkbox Q-admin">
+                <div>
+                    <input type="checkbox" id="ai-1" name="ai-1" />
+                    <label for="ai-1" style="padding-top: 0.68vw;">Компания создаёт программное обеспечение,
+                        которое относится к сфере искусственного интеллекта.</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="Q-admin" style="margin-top: 2vw;">
+            <p>Отрасли</p>
+            <div class="search-container">
+                <div class="search-box">
+                    <div id="selected-tags-6" class="selected-tags"></div> <!-- Теги будут отображаться здесь -->
+                    <div class="StrokaPoisk" id="clickPAKOTRASL" onclick="clickPAKOTRASL2()"
+                        style="position: relative;">
+                        <input type="text" id="search-input-6" class="search-input" placeholder="Выберите из списка">
+                        <svg id="dropdown-icon-6" xmlns="http://www.w3.org/2000/svg" width="0.73vw" height="0.42vw"
+                            viewBox="0 0 14 8" fill="none" style="position: absolute; right: 1vw; top: 1.2vw;">
+                            <path d="M1 0.999999L7 7L13 1" stroke="#1F2B6A" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="dropdown" id="dropdown-6" style="display: none;">
+                        <ul id="dropdown-list-6">
+                            <!-- Список будет добавлен динамически -->
+                        </ul>
+                        <div id="no-results-6" class="no-results" style="display: none;">
+                            По вашему запросу ничего не найдено.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="b-admin">
+            <button onclick="deleteCompany()">Удалить компанию</button>
+            <button onclick="updateCompany()">Обновить данные</button>
+            <button onclick="resetCompany()">Сброс</button>
+        </div>
+    </div>
+
+</body>

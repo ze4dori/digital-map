@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="../static/images/logoDR.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer" />
+    <!--Этот элемент определяет параметры отображения на мобильных устройствах width=device-width указывает, что ширина страницы должна соответствовать ширине устройства, а initial-scale=1.0 задает начальный масштаб отображения-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!--Для шрифтра из фигмы (не работает)-->
+    <title>Портал российских IT компаний</title>
+    <link rel="stylesheet" href="../static/css/style.css"> <!--ИЗМЕНЕНО-->
+    <link rel="stylesheet" href="../static/css/style2.css"> <!--ИЗМЕНЕНО-->
+    <script type="text/javascript" src="../static/js/script.js"></script> <!--ИЗМЕНЕНО-->
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i]function() { (m[i].a = m[i].a[]).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(99199811, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/99199811" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+
+<style>
+    /* Медиа запрос для экранов менее 450px, но коэффициент 3.74. Мобильная версия */
+    @media (max-width: 450px) {
+
+        .str {
+            height: auto;
+            padding-bottom: 5.35vw;
+        }
+
+        .winfilter {
+            padding-top: 2vw;
+            position: static;
+            width: 96vw;
+            height: auto;
+            margin-left: 2vw;
+            font-size: 3.2vw;
+            border-radius: 1.34vw;
+        }
+
+        .winfilter h1 {
+            font-size: 4.8vw !important;
+            margin-left: 5.35vw !important;
+            margin-bottom: 2vw;
+        }
+
+        .winfilter h2 {
+            font-size: 3.2vw;
+            margin-left: 5.35vw;
+        }
+
+        .close-filter {
+            margin-left: 66vw;
+            width: 4.8vw;
+            height: 4.8vw;
+        }
+
+        .line-1 {
+            width: 94vw;
+        }
+
+        .wfilter {
+            margin: 5.35vw;
+        }
+
+        .search-input {
+            width: 87vw !important;
+        }
+
+        .search-container {
+            width: 87vw !important;
+            padding-right: 1.3vw;
+        }
+
+        .dropdown {
+            width: 87vw !important;
+        }
+
+        .checkbox label {
+            margin-left: 0vw;
+            font-size: 3.2vw !important;
+        }
+
+        input[type="checkbox"]+label::before {
+            top: 0vw;
+        }
+
+        .container_knopochek button {
+            height: 10.16vw !important;
+            width: 44.92vw;
+            border-radius: 1.34vw !important;
+            font-size: 3.2vw !important;
+            margin-top: 5.35vw !important;
+
+        }
+
+        .list {
+            padding-top: 5.35vw;
+            width: 96vw;
+            height: auto;
+            margin-left: 2vw;
+            font-size: 2.67vw;
+            overflow: hidden;
+            border-radius: 1.34vw;
+
+            position: static;
+        }
+        
+        .container-2 {
+            margin: 0vw;
+            margin-top: 0vw;
+            margin-bottom: 2.67vw;
+        }
+
+        .list h1 {
+            font-size: 3.2vw !important;
+            margin-left: 5.35vw !important;
+            margin-bottom: 2vw;
+        }
+
+        .list-items img {
+            width: 5.88vw;
+            height: 5.88vw;
+        }
+
+        .list-items h2 {
+            font-size: 4.8vw;
+            margin-top: 0vw;
+            margin-bottom: 0vw;
+            margin-left: 2vw;
+        }
+
+        .list-items p {
+            margin-bottom: 0vw;
+            margin-top: 2.67vw;
+        }
+
+        .container img {
+            border-radius: 1.34vw;
+        }
+
+        .back {
+            font-size: 3.2vw;
+            margin-right: 5.35vw;
+        }
+
+        .container {
+            width: 96vw;
+            padding-left: 5.35vw;
+            padding-top: 2.67vw;
+            padding-bottom: 2.67vw;
+        }
+
+        .info {
+            width: 96vw;
+            height: auto;
+            font-size: 3.2vw;
+            overflow-y: scroll;
+            border-radius: 1.34vw;
+            padding-top: 0vw;
+            position: static;
+            margin-left: 2vw;
+        }
+
+        .info h1 {
+            font-size: 4.8vw !important;
+            margin-bottom: 2vw;
+        }
+
+        .mySlides {
+            height: 35vw;
+        }
+
+        .slideshow-container {
+            height: 35vw;
+        }
+
+        .dots {
+            margin-bottom: 10vw;
+            margin-top: -10vw;
+            margin-left: 50%;
+            position: static;
+        }
+
+        .dot {
+            height: 2vw;
+            width: 2vw;
+        }
+
+        .textInfo span {
+            font-size: 3.2vw;
+        }
+
+        .line {
+            padding-left: 0vw;
+            width: 86vw;
+            margin-top: 4vw;
+            margin-bottom: 4vw;
+        }
+
+        .textInfo h2 {
+            font-size: 3.2vw;
+        }
+
+        .textInfo p {
+            font-size: 3.2vw;
+            margin-left: 0vw;
+            width: auto;
+        }
+
+        .textInfo {
+            margin-left: 5.35vw;
+            margin-right: 5.35vw;
+        }
+
+        .links {
+            margin-top: 4vw;
+            margin-bottom: 4vw;
+        }
+
+        .link-icon {
+            width: 8vw;
+            margin-right: 2vw;
+        }
+
+        .info::-webkit-scrollbar {
+            width: 0.8vw;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0.8vw;
+        }
+
+        .close {
+            margin-top: 2vw !important;
+            margin-right: 2vw !important;
+            width: 5vw !important;
+            height: 5vw !important;
+            position: absolute !important;
+            top: 40vw !important;
+            right: 4vw !important;
+            z-index: 9999 !important;
+        }
+
+        #ButtonPO {
+            width: auto !important;
+            height: 8.7vw !important;
+            font-size: 2.8vw !important;
+            border-radius: 1.34vw !important;
+        }
+
+        #ButtonPAK {
+            width: auto !important;
+            height: 8.7vw !important;
+            font-size: 2.8vw !important;
+            border-radius: 1.34vw !important;
+        }
+
+        .options {
+            margin-left: 2vw;
+            padding-top: 8.02vw;
+            display: flex;
+            margin-bottom: 5.35vw;
+        }
+
+        .map-mobile {
+            margin-left: 2vw;
+            width: 96vw;
+            margin-top: 5.35vw;
+        }
+        
+        .no-results {
+            padding: 2.67vw;
+            font-size: 2.67vw;
+        }
+
+    }
+</style>
+
+<body style="margin:0;">
+
+    <div class="header-line-main"> <!--Шапка с менюшкой -->
+        <div class="name" style="display: flex; align-items: center;">
+            <img onclick="window.location.href='/'" src="../static/images/logoDR.svg"
+                style="width: 4vw; margin-right: 2vw; cursor: pointer;">
+            <p style="font-size: 1.04vw; cursor: default;" onclick="window.location.href='/'">Портал российских
+                ИТ-решений</p>
+        </div>
+
+
+        {% if check_auth %}
+            <!-- Кнопка "Меню" для авторизованного пользователя -->
+            <button id="myButton-burger-menu" onclick="myFunctionForMyButtonMenu(event)"
+                style="display: flex; margin-left: 22vw; align-items: center; margin-right: 0vw; cursor: pointer;">
+                Меню
+                <svg style="margin-left: 2.4vw;" xmlns="http://www.w3.org/2000/svg" width="1.52vw" height="0.88vw"
+                    viewBox="0 0 25 17" fill="none">
+                    <rect y="0.5" width="25" height="2" fill="#1F2B6A" fill-opacity="0.8" />
+                    <rect y="7.5" width="25" height="2" fill="#1F2B6A" fill-opacity="0.8" />
+                    <rect y="14.5" width="25" height="2" fill="#1F2B6A" fill-opacity="0.8" />
+                </svg>
+            </button>
+        {% else %}
+            <!-- Кнопка "Войти" для неавторизованного пользователя -->
+            <button class="myButton-enter" style="cursor: pointer;" onclick="openModal()">
+                Войти
+            </button>
+        {% endif %}
+        <!--<p style="cursor: default; color:red; position: absolute; right: 11vw; font-size: 0.73vw;">Внимание! Портал
+            находится в тестовом режиме.</p>-->
+    </div>
+
+    <div id="burger-menu" class="burger-menu" style="display: none;">
+        <p style="font-size: 0.83vw; cursor: default;">Петров А.В</p> <!-- Динамические данные -->
+        <a href="/" class="menu-burger-item">Главная</a>
+        <a href="/map" class="menu-burger-item">Портал</a>
+        <a href="/#news" class="menu-burger-item">Новости</a>
+        <a href="/application" class="menu-burger-item">Заявления</a>
+        <a href="" class="menu-burger-item" style="color: rgba(31, 43, 106, 0.5);">Региональные представители</a>
+        <form method="post" action="/logout/map">
+            <button type="submit" class="menu-burger-item" style="color: red; background: none; border: none; padding: 0; cursor: pointer;">
+                Выйти
+            </button>
+        </form>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal" onclick="closeModal(event)">
+        <div class="modal-content">
+            <div id="close" onclick="closeModalPopApp(event)">
+                <svg style="float: right;" xmlns="http://www.w3.org/2000/svg" width="1.25vw" height="1.25vw"
+                    viewBox="0 0 24 24" fill="none">
+                    <path d="M1.78516 22.2134L22.9984 1.00018" stroke="#383874" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path d="M1.78516 1.21338L22.9984 22.4266" stroke="#383874" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+            </div>
+            <p style="font-size: 1.25vw; font-weight: 500;">Портал доступен только <br> авторизованным пользователям</p>
+            <form action="/auth/redirect">
+                <button style="width: 42.55vw;">
+                    <div style="display: flex; justify-content: center; align-items: center; cursor: pointer;">
+                        <img style="width: 1.52vw; margin-left: 2.4vw; margin-right: 0.2vw;"
+                            src="../static/images/gosuslugi.png" alt="Кнопка_госуслуги" class="menu-icon" />
+                        <p>Войти через Госуслуги</p>
+                    </div>
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="str">
+
+        <form class="options" action="/" method="post"> <!--ИЗМЕНЕНО-->
+            <input type="hidden" name="active_button" id="active_button" value="">
+            <button class="menu-item active" id="ButtonPO" type="button" onclick="myFunctionClick(this.id)">Программное
+                обеспечение</button>
+            <button class="menu-item " id="ButtonPAK" type="button"
+                onclick="myFunctionClick(this.id)">Программно-аппаратные комплексы</button>
+        </form>
+        <!-- <img class="map-mobile" src="../static/images/activemap.png"> -->
+
+        <!--Окно фильтры для ПО-->
+        <div class="winfilter" id="myModal" style="display: block; right: 1.04vw;">
+
+            <div class="container-4">
+                <h1>Фильтр</h1>
+
+                <!-- <svg class="close-filter" id="close" width="1.04vw" height="1.04vw" viewBox="0 0 18 18" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" onclick="closeMyModal()">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17.7728 1.32372C18.0756 1.0209 18.0756 0.529933 17.7728 0.227114C17.47 -0.0757047 16.979 -0.0757047 16.6762 0.227114L8.99974 7.90357L1.32372 0.227552C1.0209 -0.0752664 0.529933 -0.0752668 0.227114 0.227552C-0.0757048 0.530371 -0.0757044 1.02134 0.227114 1.32416L7.90313 9.00017L0.22714 16.6762C-0.0756778 16.979 -0.0756782 17.47 0.227141 17.7728C0.529959 18.0756 1.02093 18.0756 1.32374 17.7728L8.99974 10.0968L16.6762 17.7732C16.979 18.076 17.47 18.076 17.7728 17.7732C18.0756 17.4704 18.0756 16.9794 17.7728 16.6766L10.0963 9.00017L17.7728 1.32372Z"
+                        fill="#383874" fill-opacity="0.2" />
+                </svg> -->
+            </div>
+            <svg class="line-1" xmlns="http://www.w3.org/2000/svg" width="23.96vw" height="1" viewBox="0 0 460 1"
+                fill="none">
+                <line y1="0.5" x2="460" y2="0.5" stroke="#383874" stroke-opacity="0.5" />
+            </svg>
+            <h2>Программное обеспечение</h2>
+            <div class="wfilter">
+
+                <!--Новый поиск-->
+                <div class="search-container">Регион
+                    <div class="search-box">
+                        <div id="selected-tags" class="selected-tags"></div>
+                        <div class="StrokaPoisk" id="clickPOR" onclick="clickPOR();" style="position: relative;">
+                            <input type="text" id="search-input" class="search-input" placeholder="Вся Россия"
+                                style="padding-right: 24px;">
+                            <svg id="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="0.73vw" height="0.42vw"
+                                viewBox="0 0 14 8" fill="none" style="position: absolute; right: 1vw; top: 1.2vw;">
+                                <path d="M1 0.999999L7 7L13 1" stroke="#1F2B6A" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="dropdown" id="dropdown" style="display: none; cursor: default;">
+                            <ul id="dropdown-list">
+                                <!-- Список будет добавлен динамически -->
+                            </ul>
+                            <div id="no-results" class="no-results" style="display: none; cursor: default;">
+                                По вашему запросу ничего не найдено.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-container">Наименование класса ПО
+                    <div class="search-box">
+                        <div id="selected-tags-1" class="selected-tags"></div>
+                        <div class="StrokaPoisk" id="clickPONAME" onclick="clickPONAME()" style="position: relative;">
+                            <input type="text" id="search-input-1" class="search-input" placeholder="Все">
+                            <svg id="dropdown-icon-1" xmlns="http://www.w3.org/2000/svg" width="0.73vw" height="0.42vw"
+                                viewBox="0 0 14 8" fill="none" style="position: absolute; right: 1vw; top: 1.2vw;">
+                                <path d="M1 0.999999L7 7L13 1" stroke="#1F2B6A" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="dropdown" id="dropdown-1" style="display: none;">
+                            <ul id="dropdown-list-1">
+                                <!-- Список будет добавлен динамически -->
+                            </ul>
+                            <div id="no-results-1" class="no-results" style="display: none;">
+                                По вашему запросу ничего не найдено.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-container">Отрасли применения
+                    <div class="search-box">
+                        <div id="selected-tags-2" class="selected-tags"></div>
+                        <div class="StrokaPoisk" id="clickPOOTRASL" onclick="clickPOOTRASL()"
+                            style="position: relative;">
+                            <input type="text" id="search-input-2" class="search-input" placeholder="Все">
+                            <svg id="dropdown-icon-2" xmlns="http://www.w3.org/2000/svg" width="0.73vw" height="0.42vw"
+                                viewBox="0 0 14 8" fill="none" style="position: absolute; right: 1vw; top: 1.2vw;">
+                                <path d="M1 0.999999L7 7L13 1" stroke="#1F2B6A" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="dropdown" id="dropdown-2" style="display: none;">
+                            <ul id="dropdown-list-2">
+                                <!-- Список будет добавлен динамически -->
+                            </ul>
+                            <div id="no-results-2" class="no-results" style="display: none;">
+                                По вашему запросу ничего не найдено.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox">
+                    <div class="checkgosreg">
+                        <input type="checkbox" id="gosreg" name="gosreg" checked />
+                        <label for="gosreg">Единый реестр российских программ для ЭВМ и БД</label>
+                    </div>
+                    <div class="checkAI">
+                        <input type="checkbox" id="AI" name="AI" />
+                        <label for="AI">Программное обеспечение относится к сфере искусственного интеллекта </label>
+                    </div>
+                </div>
+
+                <div class="container_knopochek">
+                    <button class="knopochka_belaya" id="myButtonB" onclick="myFunctionB()">Сбросить фильтр</button>
+                    <button class="knopochka_sinya" id="myButtonS" style="width: 75vw;"
+                        onclick="myFunctionS()">Применить</button>
+                </div>
+            </div>
+        </div>
+        <!--Конец Окно фильтры-->
+
+        <!--Окно фильтры для ПАК-->
+        <div class="winfilter" id="myModalPAK" style="display: none; right: 1.04vw">
+            <div class="container-4">
+                <h1>Фильтр</h1>
+
+                <!-- <svg class="close-filter" id="closePAK" width="1.04vw" height="1.04vw" viewBox="0 0 18 18" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" onclick="closeMyModalPAK()">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17.7728 1.32372C18.0756 1.0209 18.0756 0.529933 17.7728 0.227114C17.47 -0.0757047 16.979 -0.0757047 16.6762 0.227114L8.99974 7.90357L1.32372 0.227552C1.0209 -0.0752664 0.529933 -0.0752668 0.227114 0.227552C-0.0757048 0.530371 -0.0757044 1.02134 0.227114 1.32416L7.90313 9.00017L0.22714 16.6762C-0.0756778 16.979 -0.0756782 17.47 0.227141 17.7728C0.529959 18.0756 1.02093 18.0756 1.32374 17.7728L8.99974 10.0968L16.6762 17.7732C16.979 18.076 17.47 18.076 17.7728 17.7732C18.0756 17.4704 18.0756 16.9794 17.7728 16.6766L10.0963 9.00017L17.7728 1.32372Z"
+                        fill="#383874" fill-opacity="0.2" />
+                </svg> -->
+            </div>
+            <svg class="line-1" xmlns="http://www.w3.org/2000/svg" width="23.96vw" height="1" viewBox="0 0 460 1"
+                fill="none">
+                <line y1="0.5" x2="460" y2="0.5" stroke="#383874" stroke-opacity="0.5" />
+            </svg>
+            <h2>Программно-аппаратные комплексы</h2>
+            <div class="wfilter">
+                <div class="search-container">Регион
+                    <div class="search-box">
+                        <div id="selected-tags-3" class="selected-tags"></div>
+                        <div class="StrokaPoisk" id="clickPAKR" onclick="clickPAKR();" style="position: relative;">
+                            <input type="text" id="search-input-3" class="search-input" placeholder="Вся Россия">
+                            <svg id="dropdown-icon-3" xmlns="http://www.w3.org/2000/svg" width="0.73vw" height="0.42vw"
+                                viewBox="0 0 14 8" fill="none" style="position: absolute; right: 1vw; top: 1.2vw;">
+                                <path d="M1 0.999999L7 7L13 1" stroke="#1F2B6A" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="dropdown" id="dropdown-3" style="display: none;">
+                            <ul id="dropdown-list-3">
+                                <!-- Список будет добавлен динамически -->
+                            </ul>
+                            <div id="no-results-3" class="no-results" style="display: none;">
+                                По вашему запросу ничего не найдено.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-container">Наименование класса ПАК
+                    <div class="search-box">
+                        <div id="selected-tags-4" class="selected-tags"></div>
+                        <div class="StrokaPoisk" id="clickPAKNAME" onclick="clickPAKNAME()" style="position: relative;">
+                            <input type="text" id="search-input-4" class="search-input" placeholder="Все">
+                            <svg id="dropdown-icon-4" xmlns="http://www.w3.org/2000/svg" width="0.73vw" height="0.42vw"
+                                viewBox="0 0 14 8" fill="none" style="position: absolute; right: 1vw; top: 1.2vw;">
+                                <path d="M1 0.999999L7 7L13 1" stroke="#1F2B6A" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="dropdown" id="dropdown-4" style="display: none;">
+                            <ul id="dropdown-list-4">
+                                <!-- Список будет добавлен динамически -->
+                            </ul>
+                            <div id="no-results-4" class="no-results" style="display: none;">
+                                По вашему запросу ничего не найдено.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-container">Отрасли применения
+                    <div class="search-box">
+                        <div id="selected-tags-5" class="selected-tags"></div>
+                        <div class="StrokaPoisk" id="clickPAKOTRASL" onclick="clickPAKOTRASL()"
+                            style="position: relative;">
+                            <input type="text" id="search-input-5" class="search-input" placeholder="Все">
+                            <svg id="dropdown-icon-5" xmlns="http://www.w3.org/2000/svg" width="0.73vw" height="0.42vw"
+                                viewBox="0 0 14 8" fill="none" style="position: absolute; right: 1vw; top: 1.2vw;">
+                                <path d="M1 0.999999L7 7L13 1" stroke="#1F2B6A" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="dropdown" id="dropdown-5" style="display: none;">
+                            <ul id="dropdown-list-5">
+                                <!-- Список будет добавлен динамически -->
+                            </ul>
+                            <div id="no-results-5" class="no-results" style="display: none;">
+                                По вашему запросу ничего не найдено.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox">
+                    <div class="checkgosreg">
+                        <input type="checkbox" id="gosregPAK" name="gosregPAK" checked />
+                        <label for="gosregPAK">Единый реестр российских программ для ЭВМ и БД</label>
+                    </div>
+                </div>
+
+                <div class="container_knopochek">
+                    <button class="knopochka_belaya" id="myButtonBPAK" onclick="myFunctionBPAK()">Сбросить
+                        фильтр</button>
+                    <button class="knopochka_sinya" id="myButtonSPAK" style="width: 75vw;"
+                        onclick="myFunctionSPAK()">Применить</button>
+                </div>
+            </div>
+        </div>
+        <!--Конец Окно фильтры-->
+
+
+        <!--Окно списка компаний-->
+        <div class="list" id="myList" style="display: none;">
+            <div class="container-2">
+                <h1>Список IT компаний </h1>
+                <button class="back" id="ButtonBack" onclick="myFunctionBack()"
+                    style="margin-left: auto;">Назад</button>
+            </div>
+            <svg class="line-1" xmlns="http://www.w3.org/2000/svg" width="23.96vw" height="1" viewBox="0 0 460 1"
+                fill="none">
+                <line y1="0.5" x2="460" y2="0.5" stroke="#383874" stroke-opacity="0.5" />
+            </svg>
+            <div class="list-items" id="list-items">
+                <!-- <div class="list-item" id="myBlock" onclick="myFunctionInfo()">
+                <div class="container">
+                    <img src="static/images/icon_IT_novazy.png" alt="Иконка">
+
+                    <div class="info_container">
+                        <h2>{{Company_name}}</h2>
+                        <p>{{Position}}</p>
+                        <p>{{Company_adress}}</p>
+                    </div>
+                </div>
+            </div> -->
+            </div>
+        </div>
+
+        <!--Конец Окно списка компаний-->
+
+        <!--Окно информации о компании-->
+        <div class="info" id="myITinfo" style="display: none;">
+
+        </div>
+
+
+    </div>
+    <div class="footer" style="display: flex; justify-content: space-between; align-items: center; ">
+        <div>
+            <h3 style="cursor: default;">Контакты</h3>
+            <div style="display: flex; cursor: default;">
+                <p>dis@krasnodar.ru</p>
+                <p style="margin-left: 1.875vw;">+7 (861) 214-22-00</p>
+                <!-- <p style="margin-left: 1.875vw;">+7 999 999-99-99</p> -->
+            </div>
+        </div>
+        <div>
+            <h3 style="cursor: default;">Навигация</h3>
+            <div class="mini-menu" style="display: flex;">
+                <a href="/">Главная</a>
+                <a href="/map" style="margin-left: 1.875vw;">Портал</a>
+                {% if check_auth %}
+                    <!-- Авторизованный пользователь -->
+                    <a href="/application" style="margin-left: 1.875vw;">Заявления</a>
+                {% else %}
+                    <!-- Неавторизованный пользователь -->
+                    <a style="margin-left: 1.875vw; cursor: pointer;" onclick="openModal()">Заявления</a>
+                {% endif %}
+                <a href="/region-contacts" style="margin-left: 1.875vw;" id="regpredstaviteli">Региональные
+                    представители</a>
+            </div>
+        </div>
+        <div>
+            <p style="margin-top: 2.66vw; cursor: default;">Все права защищены</p>
+            <p><a href="/privacy-policy">Политика конфиденциальности</a></p>
+            <a href="https://kollab.pro/" target="_blank" style="display: flex; align-items: center; text-decoration: none; cursor: pointer;">
+                <p style="margin: 0vw; margin-right: 0.26vw; color: inherit;">Портал разработан Kollab.pro</p>
+                <img src="../static/images/kollab.png" alt="Логотип">
+            </a>
+        </div>
+    </div>
+</body>

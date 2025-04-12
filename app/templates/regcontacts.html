@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="../static/images/logoDR.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer" />
+    <!--Этот элемент определяет параметры отображения на мобильных устройствах width=device-width указывает, что ширина страницы должна соответствовать ширине устройства, а initial-scale=1.0 задает начальный масштаб отображения-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Региональные представители</title>
+    <link rel="stylesheet" href="../static/css/style2.css"> <!--ИЗМЕНЕНО-->
+    <script type="text/javascript" src="../static/js/script.js"></script> <!--ИЗМЕНЕНО-->
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]function(){(m[i].a=m[i].a[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(99199811, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/99199811" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+
+<body style="margin:0;">
+
+    <div class="header-line-main"> <!--Шапка с менюшкой -->
+        <div class="name" style="display: flex; align-items: center;">
+            <img onclick="window.location.href='/'" src="../static/images/logoDR.svg" style="width: 4vw; margin-right: 2vw; cursor: pointer;">
+            <p style="font-size: 1.04vw; cursor: default;" onclick="window.location.href='/'">Портал российских ИТ-решений</p>
+        </div>
+    
+        {% if check_auth %}
+            <!-- Кнопка "Меню" для авторизованного пользователя -->
+            <button id="myButton-burger-menu" onclick="myFunctionForMyButtonMenu(event)"
+                style="display: flex; margin-left: 22vw; align-items: center; margin-right: 0vw; cursor: pointer;">
+                Меню
+                <svg style="margin-left: 2.4vw;" xmlns="http://www.w3.org/2000/svg" width="1.52vw" height="0.88vw"
+                    viewBox="0 0 25 17" fill="none">
+                    <rect y="0.5" width="25" height="2" fill="#1F2B6A" fill-opacity="0.8" />
+                    <rect y="7.5" width="25" height="2" fill="#1F2B6A" fill-opacity="0.8" />
+                    <rect y="14.5" width="25" height="2" fill="#1F2B6A" fill-opacity="0.8" />
+                </svg>
+            </button>
+        {% else %}
+            <!-- Кнопка "Войти" для неавторизованного пользователя -->
+            <button class="myButton-enter" style="cursor: pointer;" onclick="openModal()">
+                Войти
+            </button>
+        {% endif %}
+    </div>
+    
+
+    <div id="burger-menu" class="burger-menu" style="display: none;">
+        <p style="font-size: 0.83vw; cursor: default;">Петров А.В</p> <!-- Динамические данные -->
+        <a href="/" class="menu-burger-item">Главная</a>
+        <a href="/map" class="menu-burger-item">Портал</a>
+        <a href="/#news" class="menu-burger-item">Новости</a>
+        <a href="/application" class="menu-burger-item">Заявления</a>
+        <a href="" class="menu-burger-item" style="color: rgba(31, 43, 106, 0.5);">Региональные представители</a>
+        <form method="post" action="/logout/region-contacts">
+            <button type="submit" class="menu-burger-item" style="color: red; background: none; border: none; padding: 0; cursor: pointer;">
+                Выйти
+            </button>
+        </form>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal" onclick="closeModal(event)">
+        <div class="modal-content">
+            <div id="close" onclick="closeModalPopApp(event)">
+                <svg style="float: right;" xmlns="http://www.w3.org/2000/svg" width="1.25vw" height="1.25vw"
+                    viewBox="0 0 24 24" fill="none">
+                    <path d="M1.78516 22.2134L22.9984 1.00018" stroke="#383874" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path d="M1.78516 1.21338L22.9984 22.4266" stroke="#383874" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+            </div>
+            <p style="font-size: 1.25vw; font-weight: 500;">Портал доступен только <br> авторизованным пользователям</p>
+            <form action="/auth/redirect">
+                <button style="width: 42.55vw;">
+                    <div style="display: flex; justify-content: center; align-items: center; cursor: pointer;">
+                        <img style="width: 1.52vw; margin-left: 2.4vw; margin-right: 0.2vw;"
+                            src="../static/images/gosuslugi.png" alt="Кнопка_госуслуги" class="menu-icon" />
+                        <p>Войти через Госуслуги</p>
+                    </div>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="str-app" style="padding-bottom: 30vw;"> <!--Целиком страница-->
+        <div style="display: flex; justify-content: center;">
+            <div class="name-container" style="display: flex; width: 60.42vw; align-items: center;">
+            <h1 
+                style="font-size: 2.5vw; font-weight: 400; margin-bottom: 0; margin-top: 0; margin-left: 0vw; cursor: default;">
+                Контакты региональных представителей</h1>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <div class="search-container">
+                <div class="search-box">
+                    <div id="selected-tags-3" class="selected-tags"></div>
+                    <div class="StrokaPoisk" id="clickPAKR" onclick="clickPAKR();" style="position: relative;">
+                        <input type="text" id="search-input-3" class="search-input" placeholder="Вся Россия">
+                        <svg id="dropdown-icon-3" xmlns="http://www.w3.org/2000/svg" width="0.73vw" height="0.42vw"
+                            viewBox="0 0 14 8" fill="none" style="position: absolute; right: 1vw; top: 1.2vw;">
+                            <path d="M1 0.999999L7 7L13 1" stroke="#1F2B6A" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="dropdown" id="dropdown-3" style="display: none;">
+                        <ul id="dropdown-list-3">
+                            <!-- Список будет добавлен динамически -->
+                        </ul>
+                        <div id="no-results-3" class="no-results" style="display: none;">
+                            По вашему запросу ничего не найдено.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="regions-container">
+            <!-- <div class="reg-container">
+                    <img src="../static/images/emblems/AD.png" style="width: 2.6vw; height: 2.6vw;" >
+                    <h2>Республика Адыгея</h2>
+                    <div>
+                        <h3>Контакты</h3>
+                        <div style="display: flex;">
+                            <p>qqq@gmailcom</p>
+                            <p style="margin-left: 1.875vw;">+7 999 999-99-99</p>
+                            <p style="margin-left: 1.875vw;">+7 999 999-99-99</p>
+                        </div>
+                    </div>
+                </div> -->
+        </div>
+    </div>
+    <div class="footer" style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <h3 style="cursor: default;">Контакты</h3>
+            <div style="display: flex; cursor: default;">
+                <p>dis@krasnodar.ru</p>
+                <p style="margin-left: 1.875vw;">+7 (861) 214-22-00</p>
+                <!-- <p style="margin-left: 1.875vw;">+7 999 999-99-99</p> -->
+            </div>
+        </div>
+        <div>
+            <h3 style="cursor: default;">Навигация</h3>
+            <div class="mini-menu" style="display: flex;">
+                <a href="/">Главная</a>
+                <a href="/map" style="margin-left: 1.875vw;">Портал</a>
+                {% if check_auth %}
+                    <!-- Авторизованный пользователь -->
+                    <a href="/application" style="margin-left: 1.875vw;">Заявления</a>
+                {% else %}
+                    <!-- Неавторизованный пользователь -->
+                    <a style="margin-left: 1.875vw; cursor: pointer;" onclick="openModal()">Заявления</a>
+                {% endif %}
+                <a href="" style="margin-left: 1.875vw;" id="regpredstaviteli">Региональные представители</a>
+            </div>
+        </div>
+        <div>
+            <p style="margin-top: 2.66vw; cursor: default;">Все права защищены</p>
+            <p><a href="/privacy-policy">Политика конфиденциальности</a></p>
+            <a href="https://kollab.pro/" target="_blank" style="display: flex; align-items: center; text-decoration: none; cursor: pointer;">
+                <p style="margin: 0vw; margin-right: 0.26vw; color: inherit;">Портал разработан Kollab.pro</p>
+                <img src="../static/images/kollab.png" alt="Логотип">
+            </a>
+        </div>
+    </div>
+</body>

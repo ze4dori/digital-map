@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="../static/images/logoDR.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer" />
+    <!--Этот элемент определяет параметры отображения на мобильных устройствах width=device-width указывает, что ширина страницы должна соответствовать ширине устройства, а initial-scale=1.0 задает начальный масштаб отображения-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Заявление о включении сведений компании</title>
+    <link rel="stylesheet" href="../static/css/style2.css"> <!--ИЗМЕНЕНО-->
+    <script type="text/javascript" src="../static/js/script.js"></script> <!--ИЗМЕНЕНО-->
+    
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]function(){(m[i].a=m[i].a[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(99199811, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/99199811" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+
+<body style="margin:0;">
+
+    <div class="header-line-main"> <!--Шапка с менюшкой -->
+        <div class="name" style="display: flex; align-items: center;">
+            <img onclick="window.location.href='/'" src="../static/images/logoDR.svg" style="width: 4vw; margin-right: 2vw; cursor: pointer;">
+            <p style="font-size: 1.04vw; cursor: default;" onclick="window.location.href='/'">Портал российских ИТ-решений</p>
+        </div>
+
+        <!-- <p style="cursor: default; color:red; position: absolute; right: 11vw; font-size: 0.73vw;">Внимание! Портал находится в тестовом режиме.</p> -->
+
+        <button id="myButton-burger-menu" onclick="myFunctionForMyButtonMenu(event)"
+            style=" display: flex; margin-left: 22vw; align-items: center; margin-right: 0vw; cursor: pointer;">
+            Меню
+            <svg style="margin-left: 2.4vw;" xmlns="http://www.w3.org/2000/svg" width="1.52vw" height="0.88vw"
+                viewBox="0 0 25 17" fill="none">
+                <rect y="0.5" width="25" height="2" fill="#1F2B6A" fill-opacity="0.8" />
+                <rect y="7.5" width="25" height="2" fill="#1F2B6A" fill-opacity="0.8" />
+                <rect y="14.5" width="25" height="2" fill="#1F2B6A" fill-opacity="0.8" />
+            </svg>
+        </button>
+    </div>
+
+    <div id="burger-menu" class="burger-menu" style="display: none;">
+        <p style="font-size: 0.83vw; cursor: default;">Петров А.В</p> <!--Динамические данные-->
+        <a href="/" class="menu-burger-item">Главная</a>
+        <a href="/map" class="menu-burger-item">Портал</a>
+        <a href="/#news" class="menu-burger-item">Новости</a>
+        <a href="/application" class="menu-burger-item" style="color: rgba(31, 43, 106, 0.5);">Заявления</a>
+        <a href="/region-contacts" class="menu-burger-item">Региональные представители</a>
+        <form method="post" action="/logout">
+            <button type="submit" class="menu-burger-item" style="color: red; background: none; border: none; padding: 0; cursor: pointer;">
+                Выйти
+            </button>
+        </form>
+    </div>
+
+    <div class="str-app"> <!--Целиком страница-->
+        <h1 style="font-size: 2.5vw; font-weight: 400; margin: 0vw; cursor: default;">Заявление о включении сведений компании</h1>
+        <div class="app-countainer" style="display: flex; justify-content: space-between;">
+            <div class="app-cards" style="width: 47.9vw; cursor: default;">
+                <h2 style="font-weight: 500;">Форма для сбора данных о компаниях в области разработки ПО</h2>
+                <img src="../static/images/PO.png">
+                <form action="/application/new/applicaton-software">
+                    <button class="white-button" style="cursor: pointer;">Заполнить заявление</button>
+                </form>
+            </div>
+            <div class="app-cards" style="width: 47.9vw;">
+                <h2 style="font-weight: 500;">Форма для сбора данных о компаниях в области ПАК</h2>
+                <img src="../static/images/PAK.png">
+                <form action="/application/new/applicaton-hardware">
+                    <button class="white-button" style="cursor: pointer;">Заполнить заявление</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <h3 style="cursor: default;">Контакты</h3>
+            <div style="display: flex; cursor: default;">
+                <p>dis@krasnodar.ru</p>
+                <p style="margin-left: 1.875vw;">+7 (861) 214-22-00</p>
+                <!-- <p style="margin-left: 1.875vw;">+7 999 999-99-99</p> -->
+            </div>
+        </div>
+        <div>
+            <h3 style="cursor: default;">Навигация</h3>
+            <div class="mini-menu" style="display: flex;">
+                <a href="/">Главная</a>
+                <a href="/map" style="margin-left: 1.875vw;">Портал</a>
+                <a href="/application" style="margin-left: 1.875vw;">Заявления</a>
+                <a href="/region-contacts" style="margin-left: 1.875vw;" id="regpredstaviteli">Региональные представители</a>
+            </div>
+        </div>
+        <div>
+            <p style="margin-top: 2.66vw; cursor: default;">Все права защищены</p>
+            <p><a href="/privacy-policy">Политика конфиденциальности</a></p>
+            <a href="https://kollab.pro/" target="_blank" style="display: flex; align-items: center; text-decoration: none; cursor: pointer;">
+                <p style="margin: 0vw; margin-right: 0.26vw; color: inherit;">Портал разработан Kollab.pro</p>
+                <img src="../static/images/kollab.png" alt="Логотип">
+            </a>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="../static/images/logoDR.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer" />
+    <!--Этот элемент определяет параметры отображения на мобильных устройствах width=device-width указывает, что ширина страницы должна соответствовать ширине устройства, а initial-scale=1.0 задает начальный масштаб отображения-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="../static/css/style2.css"> <!--ИЗМЕНЕНО-->
+    <script type="text/javascript" src="../static/js/script-admin.js"></script> <!--ИЗМЕНЕНО-->
+
+</head>
+
+<body style="margin:0;">
+    <form class="form" id="loginForm">
+        <span class="label">Вход в админ-панель</span>
+        <span class="input-span">
+            <label for="email" class="label">Логин</label>
+            <input type="email" name="email" id="email" required />
+        </span>
+        <span class="input-span">
+            <label for="password" class="label">Пароль</label>
+            <input type="password" name="password" id="password" required />
+        </span>
+
+        <input class="submit" type="submit" value="Войти" />
+    </form>
+</body>

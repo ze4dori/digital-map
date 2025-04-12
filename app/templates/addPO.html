@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="../static/images/logoDR.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer" />
+    <!--Этот элемент определяет параметры отображения на мобильных устройствах width=device-width указывает, что ширина страницы должна соответствовать ширине устройства, а initial-scale=1.0 задает начальный масштаб отображения-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Заявление о включении сведений компании в области разработки ПО</title>
+    <link rel="stylesheet" href="/static/css/style2.css"> <!--ИЗМЕНЕНО-->
+    <script type="text/javascript" src="/static/js/script.js"></script> <!--ИЗМЕНЕНО-->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i]function() { (m[i].a = m[i].a[]).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(99199811, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/99199811" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+
+<body style="margin:0;">
+
+    <div class="header-line-main"> <!--Шапка с менюшкой -->
+        <div class="name" style="display: flex; align-items: center;">
+            <img onclick="window.location.href='/'" src="/static/images/logoDR.svg" style="width: 4vw; margin-right: 2vw; cursor: pointer;">
+            <p style="font-size: 1.04vw; cursor: default;" onclick="window.location.href='/'">Портал российских
+                ИТ-решений</p>
+        </div>
+
+        <!--<p style="cursor: default; color:red; position: absolute; right: 11vw; font-size: 0.73vw;">Внимание! Портал
+            находится в тестовом режиме.</p>-->
+
+        <button id="myButton-burger-menu" onclick="myFunctionForMyButtonMenu(event)"
+            style=" display: flex; margin-left: 22vw; align-items: center; margin-right: 0vw; cursor: pointer;">
+            Меню
+            <svg style="margin-left: 2.4vw;" xmlns="http://www.w3.org/2000/svg" width="1.52vw" height="0.88vw"
+                viewBox="0 0 25 17" fill="none">
+                <rect y="0.5" width="25" height="2" fill="#1F2B6A" fill-opacity="0.8" />
+                <rect y="7.5" width="25" height="2" fill="#1F2B6A" fill-opacity="0.8" />
+                <rect y="14.5" width="25" height="2" fill="#1F2B6A" fill-opacity="0.8" />
+            </svg>
+        </button>
+    </div>
+
+    <div id="burger-menu" class="burger-menu" style="display: none;">
+        <p style="font-size: 0.83vw; cursor: default;">Петров А.В</p> <!--Динамические данные-->
+        <a href="/" class="menu-burger-item">Главная</a>
+        <a href="/map" class="menu-burger-item">Портал</a>
+        <a href="/#news" class="menu-burger-item">Новости</a>
+        <!--<a href="/#help" class="menu-burger-item">Помощь</a>-->
+        <a href="/application" class="menu-burger-item" style="color: rgba(31, 43, 106, 0.5);">Заявления</a>
+        <a href="/region-contacts" class="menu-burger-item">Региональные представители</a>
+        <form method="post" action="/logout">
+            <button type="submit" class="menu-burger-item" style="color: red; background: none; border: none; padding: 0; cursor: pointer;">
+                Выйти
+            </button>
+        </form>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal" onclick="closeModal(event)">
+        <div class="modal-content">
+            <div id="close" onclick="closeModalPopApp(event)">
+                <svg style="float: right;" xmlns="http://www.w3.org/2000/svg" width="1.25vw" height="1.25vw"
+                    viewBox="0 0 24 24" fill="none">
+                    <path d="M1.78516 22.2134L22.9984 1.00018" stroke="#383874" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path d="M1.78516 1.21338L22.9984 22.4266" stroke="#383874" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+            </div>
+            <p>Спасибо! <br> Заявление успешно отправлено</p>
+            <form action="/">
+                <button class="blue-button">
+                    На главную
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="str-app"> <!--Целиком страница-->
+        <div style="display: flex; justify-content: center; ">
+            <h1 class="str-name-apps"
+                style="font-size: 2.5vw; font-weight: 400; margin-bottom: 0; margin-top: 0; cursor: default;width: 65.62vw;">
+                Заявление о включении сведений компании в области разработки ПО</h1>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <div class="app-card-big add-app" style="width: 60.42vw; display: flex; cursor: default;">
+                <div class="content-add-app">
+                    <h2 style="font-weight: 500;">Заполните форму</h2>
+                    <div class="Qs">
+                        <div class="Q">
+                            <p>Название вашей компании<span style="color: red;">*</span></p>
+                            <input type="text" id="companyName" class="report-input add" placeholder="Поле для ввода">
+                            <p id="companyNameError" class="error-message" style="color: red; display: none;"></p>
+                        </div>
+                        <div class="Q">
+                            <p>Какой тип Вашей компании: информационная безопасность, разработчик ПО, защита информации
+                                и
+                                т.д.?<span style="color: red;">*</span></p>
+                            <input type="text" id="companyType" class="report-input add" placeholder="Поле для ввода">
+                            <p id="companyTypeError" class="error-message" style="color: red; display: none;"></p>
+                        </div>
+                        <div class="Q">
+                            <p>Дайте описание Вашей компании<span style="color: red;">*</span></p>
+                            <input type="text" id="companyDescription" class="report-input add"
+                                placeholder="Поле для ввода">
+                            <p id="companyDescriptionError" class="error-message" style="color: red; display: none;">
+                            </p>
+                        </div>
+                        <div class="Q">
+                            <p>Напишите список названий продуктов компании<span style="color: red;">*</span></p>
+                            <p style="color: rgba(31, 43, 106, 0.5); margin-top: 0.2vw;">Каждый продукт указывайте с новой строки</p>
+                            <!-- <input type="text" id="productNames" class="report-input" placeholder="Поле для ввода"> -->
+                            <textarea placeholder="Поле для ввода" class="report-input add big-input" id="productNames"
+                                style="resize: vertical; padding-top: 0.5vw; font-family: Inter, sans-serif; color: rgba(31, 43, 106, 1);height: 7vw;"
+                                name="Поле для ввода" required></textarea>
+                            <p id="ProductError" class="error-message" style="color: red; display: none;"></p>
+                        </div>
+                        <div class="Q">
+                            <p>Напишите список названий услуг компании<span style="color: red;">*</span></p>
+                            <p style="color: rgba(31, 43, 106, 0.5);  margin-top: 0.2vw;">Каждую услугу указывайте с новой строки</p>
+                            <!-- <input type="text" id="serviceNames" class="report-input" placeholder="Поле для ввода"> -->
+                            <textarea placeholder="Поле для ввода" class="report-input big-input add" id="serviceNames"
+                                style="resize: vertical; padding-top: 0.5vw; font-family: Inter, sans-serif; color: rgba(31, 43, 106, 1);height: 7vw;"
+                                name="Поле для ввода" required></textarea>
+                            <p id="ServiceError" class="error-message" style="color: red; display: none;"></p>
+                        </div>
+                        <p style="color: rgba(31, 43, 106, 0.5); margin-bottom: 1vw;">Прикрепите ссылки на медиа файлы
+                            на Яндекс.Диске. <br> ВАЖНО, для корректного отображения не удаляйте файлы из хранилища.</p>
+                        <div class="Q">
+                            <p>Ссылка на логотип Вашей компании<span style="color: red;">*</span></p>
+                            <div style="display: flex; align-items: center; margin-top: 1.04vw;">
+                                <input style="width: auto; margin-top: 0;" type="text" id="logo" class="report-input add mini-input"
+                                    placeholder="Поле для ввода">
+                                <p style="color: rgba(31, 43, 106, 0.5); margin-left: 1.04vw;">Формат
+                                    — PNG, рекомендованное разрешение сторон 1:1.
+                                </p>
+                            </div>
+                            <p id="LogoError" class="error-message" style="color: red; display: none;"></p>
+
+                        </div>
+                        <div class="Q">
+                            <p>Ссылка на ролик о Вашей компании</p>
+                            <div style="display: flex; align-items: center; margin-top: 1.04vw;">
+                                <input style="width: auto; margin-top: 0;" type="text" id="video" class="report-input add mini-input"
+                                    placeholder="Поле для ввода">
+                                <p style="color: rgba(31, 43, 106, 0.5); margin-left: 1.04vw;">Допустимый размер файла —
+                                    10МБ. </p>
+                            </div>
+                        </div>
+
+                        <div class="Q">
+                            <p>Ссылка на логотип Вашей компании<span style="color: red;">*</span></p>
+                            <div style="display: flex; align-items: center; margin-top: 1.04vw;">
+                                <input style="width: auto; margin-top: 0;" type="text" id="main_logo"
+                                    class="report-input add mini-input" placeholder="Поле для ввода">
+                                <p style="color: rgba(31, 43, 106, 0.5); margin-left: 1.04vw;">Формат
+                                    — PNG, рекомендованное разрешение сторон 5:3.
+                                </p>
+                            </div>
+                            <p id="MainLogoError" class="error-message" style="color: red; display: none;"></p>
+
+                        </div>
+
+                        <div class="Q">
+                            <p>Ссылки на 3 фотографии вашей компании: производство, офис, фото сотрудников и т.д.</p>
+                            <input type="text" id="first_image" class="report-input add" placeholder="Поле для ввода">
+                            <input style="margin-top: 0.52vw;" type="text" id="second_image" class="report-input add"
+                                placeholder="Поле для ввода">
+                            <input style="margin-top: 0.52vw;" type="text" id="third_image" class="report-input add"
+                                placeholder="Поле для ввода">
+                        </div>
+                        <div class="Q">
+                            <p>Где находится Ваша компания?<span style="color: red;">*</span></p>
+                            <div class="search-container">
+                                <div class="search-box">
+                                    <div id="selected-tags" class="selected-tags"></div>
+                                    <div class="StrokaPoisk" id="clickPOR1" onclick="clickPOR1();"
+                                        style="position: relative;">
+                                        <input type="text" id="search-input" class="search-input"
+                                            placeholder="Выберите из списка">
+                                        <svg id="dropdown-icon-6" xmlns="http://www.w3.org/2000/svg" width="0.73vw"
+                                            height="0.42vw" viewBox="0 0 14 8" fill="none"
+                                            style="position: absolute; right: 1vw; top: 1.2vw;">
+                                            <path d="M1 0.999999L7 7L13 1" stroke="#1F2B6A" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="dropdown" id="dropdown" style="display: none;">
+                                        <ul id="dropdown-list">
+                                            <!-- Список будет добавлен динамически -->
+                                        </ul>
+                                        <div id="no-results" class="no-results" style="display: none;">
+                                            По вашему запросу ничего не найдено.
+                                        </div>
+                                    </div>
+                                    <p id="RegionError" class="error-message" style="color: red; display: none;"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Q">
+                            <p>Укажите адрес: улица, № дома, корпус, подъезд<span style="color: red;">*</span></p>
+                            <input type="text" id="address" class="report-input add" placeholder="Поле для ввода">
+                            <p id="AddressError" class="error-message" style="color: red; display: none;"></p>
+                        </div>
+                        <div class="Q">
+                            <p>Номер телефона Вашей компании<span style="color: red;">*</span></p>
+                            <input type="text" id="phone" class="report-input add" placeholder="Поле для ввода">
+                            <p id="PhoneError" class="error-message" style="color: red; display: none;"></p>
+                        </div>
+                        <div class="Q">
+                            <p>Ссылка на Telegram компании</p>
+                            <input type="text" id="telegram" class="report-input add" placeholder="Поле для ввода">
+                        </div>
+                        <div class="Q">
+                            <p>Ссылка на ВКонтакте компании</p>
+                            <input type="text" id="vk" class="report-input add" placeholder="Поле для ввода">
+                        </div>
+                        <div class="Q">
+                            <p>Ссылка на Яндекс Дзен компании</p>
+                            <input type="text" id="dzen" class="report-input add" placeholder="Поле для ввода">
+                        </div>
+                        <div class="Q">
+                            <p>Ссылка на RuTube компании</p>
+                            <input type="text" id="rutube" class="report-input add" placeholder="Поле для ввода">
+                        </div>
+                        <div class="Q">
+                            <p>Ссылка на сайт компании</p>
+                            <input type="text" id="website" class="report-input add" placeholder="Поле для ввода">
+                            <p id="WebsiteError" class="error-message" style="color: red; display: none;"></p>
+                        </div>
+                        <div class="Q">
+                            <p>ИНН компании<span style="color: red;">*</span></p>
+                            <input type="text" id="inn" class="report-input add" placeholder="Поле для ввода">
+                            <p id="INNError" class="error-message" style="color: red; display: none;"></p>
+                        </div>
+
+                        <div class="checkbox">
+                            <div class="">
+                                <input type="checkbox" id="reg" name="reg" />
+                                <label for="reg" style="padding-top: 0.68vw;">Компания прошла регистрацию в едином
+                                    реестре
+                                    российских программ для ЭВМ и БД.</label>
+                            </div>
+                        </div>
+
+                        <div class="checkbox">
+                            <div class="">
+                                <input type="checkbox" id="ai" name="ai" />
+                                <label for="ai" style="padding-top: 0.68vw;">Компания создаёт программное обеспечение,
+                                    которое относится к сфере искусственного интеллекта.</label>
+                            </div>
+                        </div>
+                        <div style="margin-top: 1.56vw;">
+                            <p>Какие ПО создаёт Ваша компания?<span style="color: red;">*</span></p>
+                            <div class="search-container">
+                                <div class="search-box">
+                                    <div id="selected-tags-1" class="selected-tags"></div>
+                                    <div class="StrokaPoisk" id="clickPONAME" onclick="clickPONAME()"
+                                        style="position: relative;">
+                                        <input type="text" id="search-input-1" class="search-input" placeholder="Все">
+                                        <svg id="dropdown-icon-1" xmlns="http://www.w3.org/2000/svg" width="0.73vw"
+                                            height="0.42vw" viewBox="0 0 14 8" fill="none"
+                                            style="position: absolute; right: 1vw; top: 1.2vw;">
+                                            <path d="M1 0.999999L7 7L13 1" stroke="#1F2B6A" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="dropdown" id="dropdown-1" style="display: none;">
+                                        <ul id="dropdown-list-1">
+                                            <!-- Список будет добавлен динамически -->
+                                        </ul>
+                                        <div id="no-results-1" class="no-results" style="display: none;">
+                                            По вашему запросу ничего не найдено.
+                                        </div>
+                                    </div>
+                                    <p id="SoftClassError" class="error-message" style="color: red; display: none;"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>В каких отраслях применяются Ваши ПО?<span style="color: red;">*</span></p>
+                            <div class="search-container">
+                                <div class="search-box">
+                                    <div id="selected-tags-2" class="selected-tags"></div>
+                                    <div class="StrokaPoisk" id="clickPOOTRASL" onclick="clickPOOTRASL()"
+                                        style="position: relative;">
+                                        <input type="text" id="search-input-2" class="search-input" placeholder="Все">
+                                        <svg id="dropdown-icon-2" xmlns="http://www.w3.org/2000/svg" width="0.73vw"
+                                            height="0.42vw" viewBox="0 0 14 8" fill="none"
+                                            style="position: absolute; right: 1vw; top: 1.2vw;">
+                                            <path d="M1 0.999999L7 7L13 1" stroke="#1F2B6A" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="dropdown" id="dropdown-2" style="display: none;">
+                                        <ul id="dropdown-list-2">
+                                            <!-- Список будет добавлен динамически -->
+                                        </ul>
+                                        <div id="no-results-2" class="no-results" style="display: none;">
+                                            По вашему запросу ничего не найдено.
+                                        </div>
+                                    </div>
+                                    <p id="FieldsError" class="error-message" style="color: red; display: none;"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="checkbox">
+                            <div class="">
+                                <input type="checkbox" id="agree" name="agree" />
+                                <label for="agree" style="padding-top: 0.68vw;">Я согласен(на) с политикой
+                                    конфиденциальности и даю согласие на
+                                    обработку персональных данных<span style="color: red;">*</span></label>
+                                <p id="PolicyError" class="error-message" style="color: red; display: none;"></p>
+                            </div>
+                        </div>
+
+                        <div class="knopki-form">
+                            <div>
+                                <button class="blue-button" style="cursor: pointer;"
+                                    onclick="submitApplication('ПО')">Отправить заявление</button>
+                            </div>
+                            <!-- <div>
+                            <button class="white-button-no-hover" style="cursor: pointer;" 
+                                onclick="window.location.href='/download'">Скачать форму</button>
+                        </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <h3 style="cursor: default;">Контакты</h3>
+            <div style="display: flex; cursor: default;">
+                <p>dis@krasnodar.ru</p>
+                <p style="margin-left: 1.875vw;">+7 (861) 214-22-00</p>
+                <!-- <p style="margin-left: 1.875vw;">+7 999 999-99-99</p> -->
+            </div>
+        </div>
+        <div>
+            <h3 style="cursor: default;">Навигация</h3>
+            <div class="mini-menu" style="display: flex;">
+                <a href="/">Главная</a>
+                <a href="/map" style="margin-left: 1.875vw;">Портал</a>
+                <a href="/application" style="margin-left: 1.875vw;">Заявления</a>
+                <a href="/region-contacts" style="margin-left: 1.875vw;" id="regpredstaviteli">Региональные представители</a>
+            </div>
+        </div>
+        <div>
+            <p style="margin-top: 2.66vw; cursor: default;">Все права защищены</p>
+            <p><a href="/privacy-policy">Политика конфиденциальности</a></p>
+            <a href="https://kollab.pro/" target="_blank" style="display: flex; align-items: center; text-decoration: none; cursor: pointer;">
+                <p style="margin: 0vw; margin-right: 0.26vw; color: inherit;">Портал разработан Kollab.pro</p>
+                <img src="/static/images/kollab.png" alt="Логотип">
+            </a>
+        </div>
+    </div>
+</body>
