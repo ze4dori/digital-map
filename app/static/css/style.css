@@ -1,0 +1,1327 @@
+.body
+{
+   
+    font-family: "Inter", sans-serif; /*Тот шрифт из фигмы*/
+    overflow: hidden;
+
+    
+}
+
+.str
+{
+    background-color: #F3F3FC;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+
+
+.header-line
+{
+    width: 100vw;
+    height: 3.13vw;
+    
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: #FFFF;
+    z-index: 9999999;
+
+    padding: 0 1.56vw;
+
+    margin: 0vw; /*Отступы сверхуснизу справаслева */
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter; /*Helvetica; /*Доступная замена*/
+
+    justify-content: space-between;
+
+}
+
+.header-logo{
+    margin-left: 1.56vw;
+}
+
+.container-3{
+    display: flex;
+    align-items: baseline;
+
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.toggle-container {
+    position: relative;
+    width: 2.6vw;
+    height: 1.3vw;
+    background-color: rgba(240, 242, 255, 1);
+    border-radius: 5.2vw;
+    overflow: hidden;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 0.052vw;
+    left: 0.052vw;
+    width: 1.2vw;
+    height: 1.2vw;
+    background-color: rgba(31, 43, 106, 1);
+    border-radius: 5.2vw;
+    transition: transform 0.3s ease;
+}
+
+.toggle-button.active {
+    transform: translateX(1.3vw);
+}
+
+.label {
+    transform: translateY(-50%);
+}
+
+.label-left {
+    color: rgba(31, 43, 106, 1); /* Темносиний цвет */
+    margin-right: 0.42vw;
+}
+
+.label-right {
+    color: rgba(31, 43, 106, 0.5); /* Голубой цвет */
+    margin-left: 0.42vw;
+}
+
+
+
+.menu
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-item
+{
+    height: 2.08vw;
+
+    color: rgb(31 43 106 /50%);
+    background-color: #FFFF;
+    text-decoration: none;
+    
+    margin-right: 1.04vw;
+    border: 0.078vw solid #F0F2FF;
+    border-radius: 0.26vw;
+    padding: 0.74vh 0.74vh;
+    padding-left: 1.04vw;
+    padding-right: 1.04vw;
+
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter; /*Доступная замена*/ 
+    cursor: pointer
+}
+
+.menu-item:hover {
+    background-color: rgba(57, 56, 212, 1);
+    border-color: rgba(57, 56, 212, 1);
+    color: white;
+}
+
+.menu-item:hover rect {
+    fill: white;
+}
+
+.menu-item:hover path {
+    stroke: white;
+}
+
+.menu-item:hover circle {
+    stroke: white;
+}
+
+
+button.active {
+    color: #1F2B6A;
+    border-color: rgba(31, 43, 106, 0.5);
+    background: #FFFFFF;
+}
+    
+
+.filter {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.93vh 1.85vh;
+    font-size: 0.83vw;
+    cursor: pointer;
+    text-decoration: none;
+
+
+}
+
+.filter-icon {
+    margin-left: 1.67vw;
+    width: 0.98vw;
+    height: 0.73vw;
+    vertical-align: middle;
+}
+
+
+.lk
+{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.42vw;
+}
+
+.lk img{
+    width: 1.3vw;
+    height: 1.98vw;
+}
+
+/*Активные записи*/
+.activerec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-color: #F0F2FF;
+    border-radius: 0.26vw;
+    padding: 0.53vw 1.04vw;
+    background-color: #FFF;
+
+    width: 12.55vw;
+    height: 2.08vw;
+
+    position: absolute;
+    left: 1.04vw;
+    top: 92.59vh;
+
+    box-shadow: 0 0 0.26vw rgb(143 143 143 /25%);
+
+    z-index: 9999999;
+
+    margin: 0vw; /*Отступы сверхуснизу справаслева */
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter; /*Helvetica; /*Доступная замена*/
+    cursor: default;
+}
+
+.labelnum {
+    font-size: 0.73vw;
+    color: rgb(31 43 106 /40%);
+}
+
+/* Для динамического числа */
+.number {
+    margin-left: 1.17vw;
+    font-size: 0.73vw;
+    color: #1F2B6A;
+}
+
+
+/*Карта*/
+.map
+{
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-map{
+    margin-top: 7vh;
+}
+
+#Krsn {
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+#mySvg {
+    overflow: hidden; /* скрыть все, что выходит за границы SVG */
+}
+
+/*Поп ап*/
+.popupInfo {
+    font-weight: 400;
+    font-family: Inter; /*Доступная замена*/
+    
+    display: none; /* Изначально скрыто */
+    position: absolute; /* Для точного позиционирования */
+    align-items: center;
+    justify-content: center;
+
+    z-index: 9999;
+
+    background-color: #FFF;
+    border-radius: 0.52vw;
+
+    width: 10vw;
+    /* padding: 0.1vw; */
+    /* height: 3.125vw; */
+}
+
+.gerb {
+    margin: 0.26vw;
+    width: 2.6vw; 
+    height: 2.6vw;
+    float: left;
+}
+
+.cont {
+        margin-bottom: 0.36vw;
+        display: flex;
+        align-items: baseline;
+}
+
+.popupInfo h1{
+    font-size: 0.73vw;
+    color: rgba(56, 56, 116, 1);
+    margin: 0vh;
+
+    font-weight: 400;
+
+}
+
+.popupInfo p{
+    font-size: 0.57vw;
+    color:rgba(153, 153, 153, 1);
+    /* margin-bottom: 0.21vw; */
+    margin-top: 0.26vw;
+
+    font-weight: 400;
+}
+
+.popupInfo span{
+    margin-right: 0.26vw;
+    font-size: 1.04vw;
+    font-weight: 400;
+    color:rgba(56, 56, 116, 1);
+    /* margin: 0vh;
+    margin-bottom: 0.36vw; */
+}
+
+/* .popupInfo h1, .popupInfo span{
+    display: inline;
+} */
+
+/*Окно фильтры*/
+.winfilter {
+    /* display: none; */
+    width: 26.04vw;
+    height: 90vh;
+
+    background-color: #FFFF;
+    position: fixed;
+    /* right: 1.04vw;  */
+    top: 7.4vh;
+    box-shadow: 0 0 0.46vh rgb(143 143 143 /25%);
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter; /*Доступная замена*/
+    color: rgb(31 43 106);
+
+    border-radius: 0.46vh;
+    /* transition: right 1s; */
+
+    overflow-y: scroll; /* Добавить вертикальный ползунок прокрутки */
+}
+
+.hide-button{
+    position: fixed;
+    top: 4.95vw;
+    right: 27vw;
+    cursor: pointer
+    /*transition: right 1s;*/
+}
+
+.strelka{
+    position: absolute;
+    right: 3.125vw;
+    rotate: 180deg;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    /* transition: transform 0.3s ease; */
+}
+
+.winfilter.show {
+    right: 0; 
+}
+
+.wfilter {
+    min-width: 18.23vw;
+
+    margin: 1.2vw;
+}
+
+.container-4{
+    display: flex;
+    align-items: baseline;
+    cursor: default;
+}
+
+.close{
+    margin-left: 16vw;
+    cursor: pointer
+}
+
+ /* Стили для контейнера поиска */
+ .searchContainer {
+    border: 0.052vw solid rgba(240, 242, 255, 1);
+    border-radius: 0.26vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 23.4vw;
+    height: 9.9vw;
+    /* Установите фиксированную высоту */
+    /* display: none; */
+    /* Скрываем контейнер по умолчанию */
+}
+
+.filter-item input {
+    color: rgba(31, 43, 106, 0.5);
+    font-size: 0.73vw;
+    border-color: rgba(240, 242, 255, 1);
+    border-radius: 0.26vw;
+    height: 2.08vw;
+    width: 23.4vw;
+
+    margin: 0.26vw;
+}
+
+.searchContainer li {
+    margin-left: 1.04vw;
+}
+
+.searchContainer input {
+    width: 22.88vw;
+}
+
+/* Стили для подсветки совпадений */
+.highlight {
+    background-color: rgba(240, 242, 255, 1);
+    border-radius: 0.26vw;
+}
+.listContainer{
+    padding: 0;
+}
+.selectButton {
+    appearance: none;
+    /* safari */
+    -webkit-appearance: none;
+    /* other styles for aesthetics */
+    width: 100%;
+    height: 2.08vw;
+
+    padding-left: 1.04vw;
+    margin-bottom: 0.93vh;
+    background-color: #fff;
+    border: 0.078vw solid #F0F2FF;
+    border-radius: 0.46vh;
+    color: rgb(31 43 106 /50%);
+    ;
+    cursor: pointer;
+
+    font-weight: 300;
+    font-size: 0.73vw;
+    font-family: Inter;
+    /*Доступная замена*/
+
+    display: flex;
+    align-items: center;
+    margin-top: 0.52vw;
+}
+
+/* Стилизация ползунка прокрутки */
+.searchContainer::-webkit-scrollbar {
+    width: 0.36vw; /* Ширина ползунка */
+}
+
+.searchContainer::-webkit-scrollbar-track {
+    background: #F0F2FF; /* Цвет фона трека */
+    border-radius: 0.32vh;
+}
+
+.searchContainer::-webkit-scrollbar-thumb {
+    background: #1F2B6A; /* Цвет ползунка */
+    border-radius: 0.32vh;
+}
+
+.searchContainer::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет ползунка при наведении */
+}
+
+.input{
+    
+    height: 1.56vw;
+
+    padding-left: 1.04vw;
+    margin-bottom: 0.52vw;
+    background-color: #fff;
+    border: 0.078vw solid #F0F2FF;
+    border-radius: 0.26vw;
+    color:  rgb(31 43 106 /50%);;
+    cursor: pointer;
+
+    font-weight: 300;
+    font-size: 0.73vw;
+    font-family: Inter; /*Доступная замена*/
+
+}
+
+/* Скрываем оригинальный чекбокс */
+input[type="checkbox"] {
+    display: none;
+    order: 1;
+}
+
+/* Создаем новый квадратный чекбокс */
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 1.56vw; /* Пространство для нового чекбокса */
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    background-color: #F0F2FF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.04vw;
+    height: 1.04vw;
+    border: 0.12vw solid rgba(31, 43, 106, 0.5);
+    border-radius: 0.16vw;
+}
+/* Стилизуем чекбокс, когда он отмечен*/
+input[type="checkbox"]:checked + label::before {
+    background-image: url(../images/checked.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.73vw 0.73vw;
+}
+
+
+.checkbox label{
+    order: 2;
+    margin-left: 0.52vw;
+    width: 19.53vw;
+}
+.checkbox{
+
+    color: rgb(31 43 106 /40%);
+    margin: 0.83vw 0.83vw;
+}
+
+.checkAI{
+    display: flex;
+    align-items: center;
+}
+
+.checkgosreg{
+    padding-bottom: 1.72vw;
+}
+
+.filter-item{
+    display: flex;
+    flex-direction: column;
+    color: rgb(31 43 106 /40%);
+
+    margin: 0.83vw 0vw;
+}
+
+.winfilter h1{
+    
+    display: block;
+    color: rgb(31 43 106 /100%); 
+    font-size: 1.25vw;
+    cursor: default;
+
+    margin: 1.2vw;
+    margin-top: 1.04vw;
+    margin-bottom: 1.04vw;
+    
+}
+
+
+.search-input::placeholder {
+    color: rgb(31 43 106 /50%);
+}
+
+
+.winfilter h2{
+    color: rgb(31 43 106 /100%); 
+    margin: 1.2vw;
+    font-size: 0.73vw;
+    cursor: default;
+}
+
+.container_knopochek{
+    display: flex;
+    margin-bottom: 1.04vw;
+
+    bottom: 0;
+    left: 1.04vw;
+
+}
+
+.knopochka_belaya{
+    color: #1F2B6A;
+    background-color: #FFFF;
+    text-decoration: none;
+    
+    
+    margin-right: 1.04vw;
+
+    border:  0.078vw solid rgb(31 43 106 /50%);
+    border-radius: 0.26vw;
+
+    
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter; /*Доступная замена*/
+
+    width: 9vw;
+    height: 2.08vw;
+    cursor: pointer
+}
+
+/* .knopochka_belaya:hover{
+    background-color:  rgba(57, 56, 212, 1);
+    border-color:  rgba(57, 56, 212, 1);
+    color: white;
+} */
+
+.knopochka_sinya{
+    color: #FFF;
+    background-color: #3938D4;
+    text-decoration: none;
+
+    border: 0.078vw solid rgba(57, 56, 212, 1);
+    border-radius: 0.26vw;
+    padding: 0.42vw 5.2vw;
+
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter; /*Доступная замена*/
+
+    width: 14.3vw;
+    height: 2.08vw;
+    cursor: pointer
+}
+
+.knopochka_sinya:hover{
+    background-color: rgba(31, 43, 106, 1);
+    border-color: rgba(31, 43, 106, 1);
+}
+
+
+
+/* Стилизация ползунка прокрутки */
+.winfilter::-webkit-scrollbar {
+    width: 0.36vw; /* Ширина ползунка */
+}
+
+.winfilter::-webkit-scrollbar-track {
+    background: #F0F2FF; /* Цвет фона трека */
+    border-radius: 0.32vh;
+}
+
+.winfilter::-webkit-scrollbar-thumb {
+    background: #1F2B6A; /* Цвет ползунка */
+    border-radius: 0.32vh;
+}
+
+.winfilter::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет ползунка при наведении */
+}
+
+
+/*Список компаний*/
+.list{
+    display: none;
+    width: 26.04vw;
+    height: 90vh;
+    background-color: #FFFF;
+    position: fixed;
+    right: 1.04vw; 
+    top: 7.4vh;
+    box-shadow: 0 0 0.46vh rgb(143 143 143 /25%);
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter; /*Доступная замена*/
+    color: rgb(31 43 106);
+
+    border-radius: 0.46vh;
+    transition: right 1s; /* Изменено на 'right' для анимации */
+
+    overflow-y: scroll; /* Добавить вертикальный ползунок прокрутки */
+}
+
+.list h1{
+    margin: 0;
+    display: block;
+    color: rgb(31 43 106 /100%); 
+    font-size: 1.25vw;
+    cursor: default;
+}
+
+.back{
+    all: unset; /* Удаление всех дефолтных стилей */
+    font-size: 0.73vw; /* Размер шрифта */
+    color: rgba(56, 56, 116, 0.5); /* Цвет шрифта */
+    cursor: pointer
+}
+
+.container-2{
+    margin: 1.2vw;
+    display: flex; 
+    margin-top: 1.04vw;
+    margin-bottom: 1.04vw;
+   
+}
+
+.line-1{
+    margin-bottom: 1.04vw;
+    padding-left: 1.04vw;
+    display: flex;
+}
+
+.container img{
+    width: 3.65vw;
+    height: 3.65vw;
+
+    border-radius: 0.26vw;
+
+    box-shadow: 0px 0px 0.156vw 0px rgba(0, 0, 0, 0.23);
+}
+
+.container {
+    width: 23.7vw;
+    height: fit-content;
+    border-radius: 0.52vw;
+
+    box-shadow: 0px 0px 0.26vw 0px rgba(0, 0, 0, 0.19);
+
+    margin-left: 1.04vw;
+    padding: 0.78vw;
+
+    margin-bottom:1.04vw;
+
+    display: flex;
+
+    align-items: flex-start;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.container:hover {
+    background-color: rgb(240, 242, 255);
+}
+
+.info_container{
+    display: flex;
+    align-items: center;
+}
+
+.list-items img{
+    width: 1.04vw;
+    height: 1.04vw;
+}
+
+.list-items h2 {
+    font-size: 0.94vw;
+    margin:0;
+    color: rgba(56, 56, 116, 1);
+    margin-left: 0.52vw;
+   
+}
+
+.list-items p {
+    margin: 0;
+    color: rgba(153, 153, 153, 1);
+    margin-top:0.36vw;    
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location p{
+    width: 9.12vw;
+    color: rgba(56, 56, 116, 1);
+    margin-left: 0vh;
+}
+
+.location img {
+    margin-right: 0.28vh;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    margin-left: 1.2vw;     
+}
+
+.number p {
+    
+    color: rgba(56, 56, 116, 1);
+    margin-left: 0vh;
+    padding-right: 1.04vw;
+}
+
+.number img {
+    margin-right: 0.52vw;
+    width:0.65vw;
+    height: 0.65vw;
+    margin-top: 0.5vh;
+}
+
+.line{
+    padding-left: 1.85vh;
+    width: 19.63vw;
+    
+}
+
+/* Стилизация ползунка прокрутки */
+.list::-webkit-scrollbar {
+    width: 0.36vw; /* Ширина ползунка */
+}
+
+.list::-webkit-scrollbar-track {
+    background: #F0F2FF; /* Цвет фона трека */
+    border-radius: 0.32vh;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background: #1F2B6A; /* Цвет ползунка */
+    border-radius: 0.32vh;
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет ползунка при наведении */
+}
+
+
+/*Окно информации о компании*/
+.info{
+    display: none;
+
+    width: 26.04vw;
+    height: 84vh;
+    background-color: #FFFF;
+    position: fixed;
+    left: 1.04vw; 
+    top: 7.4vh;
+    box-shadow: 0 0 0.46vh rgb(143 143 143 /25%);
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter; /*Доступная замена*/
+    color: rgb(31 43 106);
+
+    border-radius: 0.46vh;
+    transition: right 1s; /* Изменено на 'right' для анимации */
+
+    overflow-y: scroll; /* Добавить вертикальный ползунок прокрутки */
+}
+
+* {box-sizing:border-box}
+
+/* Галерея */
+.slideshow-container {
+  height: 18.3vh;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides img, .mySlides video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mySlides {
+    display: none;
+    height: 18.3vh;
+}
+
+/* Анимация */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+/* Для кнопок вперед назад(если нужно)
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -2.03vh;
+  padding: 1.48vh;
+  color: white;
+  font-weight: bold;
+  font-size: 1.67vh;
+  transition: 0.6s ease;
+  border-radius: 0 0.28vh 0.28vh 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 0.28vh 0 0 0.28vh;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 1.11vh;
+  padding: 0.74vh 1.11vh;
+  position: absolute;
+  top: 0;
+}
+*/
+
+/* Индикатор галереи (круги)*/
+.dot {
+  cursor: pointer;
+  height: 1.39vh;
+  width: 1.39vh;
+  margin: 0 0.19vh;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dots{
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.active, .dot:hover {
+  background-color: rgba(56, 56, 116, 1);
+}
+
+.info h1{
+    color: rgba(31, 43, 106, 1); 
+    /*margin: 1.48vh 1.48vh;*/
+    font-size: 1.25vw;
+    font-weight: 600;
+    margin: 0vh;
+}
+
+/*Содержание инфы о компании*/
+.textInfo{
+    margin-left: 1.04vw;
+    cursor: default;
+}
+
+.textInfo p{
+    margin-left: 0.52vw;
+    color: rgba(31, 43, 106, 1); 
+    font-size: 0.73vw;
+    font-weight: 400;
+
+    width: 22.92vw;
+}
+
+.textInfo h2{
+    color: rgb(31 43 106 /100%); 
+    margin: 0vh;
+    font-size: 0.833vw;
+    font-weight: 600;
+
+}
+
+.textInfo span{
+    color: rgba(153, 153, 153, 1);
+    font-size: 0.73vw;
+    font-weight: 400;
+}
+.location_info {
+    display: flex;
+    align-items: center;
+    margin-left: 0.46vh;
+    
+     
+}
+
+.location_info p{
+    color: rgba(31, 43, 106, 1);
+    margin-left: 0vh;
+    margin-right: 0.8vw;
+    
+}
+
+.location_info img {
+    margin-right: 0.28vh;
+
+}
+
+.number_info {
+    display: flex;
+    align-items: center;
+    margin-left: 0.93vh;    
+     
+}
+
+.number_info p {
+    color: rgba(31, 43, 106, 1);
+    margin-left: 0vh;
+    padding-right: 1.04vw;
+    
+}
+
+.number_info img {
+    margin-right: 0.52vw;
+    width:0.65vw;
+    height: 0.65vw;
+    margin-top: 0vh;
+    
+}
+
+.product_item{
+    display: flex;
+    align-items: center;
+    margin-left: 0.52vw;
+    margin-right: 0.41vw;
+}
+
+.line{
+    margin-top: 1.85vh;
+    margin-bottom: 1.85vh;
+    display: flex;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.1875vw;
+    margin-bottom: 2.1875vw;
+   
+}
+
+.link-icon{
+    width: 2.08vw;
+    margin-right: 0.625vw;
+}
+
+/* Стилизация ползунка прокрутки */
+.info::-webkit-scrollbar {
+    width: 0.36vw; /* Ширина ползунка */
+    
+}
+
+.info::-webkit-scrollbar-track {
+    background: #F0F2FF; /* Цвет фона трека */
+    border-radius: 0.32vh;
+}
+
+.info::-webkit-scrollbar-thumb {
+    background: #1F2B6A; /* Цвет ползунка */
+    border-radius: 0.32vh;
+}
+
+.info::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет ползунка при наведении */
+}
+
+/* Кнопка показать ещё и скрыть */
+.collapsed {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.expanded {
+    display: block;
+    white-space: normal;
+}
+
+.collapsed-list {
+    max-height: 100px; /* Установите максимальную высоту для видимой части */
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.expanded-list {
+    max-height: none; /* Снимает ограничение высоты */
+    transition: max-height 0.5s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.Buttonpokazat{
+    background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        outline: inherit;
+        margin-right: 1.7vw;
+        float: right;
+        margin-bottom: 0.89vw;
+}
+
+/*Для нового поиска*/
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+    color: rgb(31 43 106 /40%);
+
+    margin: 0.83vw 0vw;
+    cursor: default;
+
+    
+}
+
+.search-box {
+    position: relative;
+    margin-top: 0.52vw;
+}
+
+/* .StrokaPoisk{
+    margin-top: 3px;
+    border: 0.052vw solid rgba(240, 242, 255, 1);
+    border-radius: 0.26vw;
+} */
+
+.selected-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2vw;
+}
+
+.selected-tags .tag {
+    background-color: #e0e0e0;
+    border-radius: 0.16vw;
+    padding: 0.2vw;
+    font-size: 0.73vw;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.selected-tags .tag::after {
+    content: '×';
+    margin-left: 0.26vw;
+    cursor: pointer;
+}
+
+.search-input {
+    margin-top: 3px;
+    border: 0.052vw solid rgba(240, 242, 255, 1);
+    border-radius: 0.26vw;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+
+    
+    color: rgba(31, 43, 106, 0.5);
+    font-size: 0.73vw;
+
+    height: 2.08vw;
+    padding-left: 1.04vw;
+}
+
+.dropdown {
+    /*display: block;*/
+    /*position: absolute;*/
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-top: none;
+    background-color: #fff;
+    z-index: 1000;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 23.4vw;
+    height: 9.9vw;
+
+    border: 0.052vw solid rgba(240, 242, 255, 1);
+    border-radius: 0.26vw;
+
+    margin-top: 0.46vw;
+}
+
+.dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown ul li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.dropdown ul li:hover {
+    background-color:rgba(240, 242, 255, 1);
+}
+
+.no-results {
+    padding: 8px;
+    color: #888;
+    font-size: 0.73vw;
+}
+
+/* Стилизация ползунка прокрутки */
+.dropdown::-webkit-scrollbar {
+    width: 0.36vw; /* Ширина ползунка */
+}
+
+.dropdown::-webkit-scrollbar-track {
+    background: #F0F2FF; /* Цвет фона трека */
+    border-radius: 0.32vh;
+}
+
+.dropdown::-webkit-scrollbar-thumb {
+    background: #1F2B6A; /* Цвет ползунка */
+    border-radius: 0.32vh;
+}
+
+.dropdown::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет ползунка при наведении */
+}
+
+.burger-menu {
+    width: 13.073vw;
+    height: 11.35vw;
+
+    background-color: white;
+
+    top: 4vw;
+    right: 1.5vw;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-size: 0.73vw;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: rgba(31, 43, 106, 1);
+
+    padding-left: 1.04vw;
+    padding-bottom: 1.04vw;
+
+    border-radius: 0.26vw;
+    box-shadow: 0 0 0.26vw rgb(143 143 143 /35%);
+
+}
+
+.burger-menu a {
+    text-decoration: none;
+    color: rgba(31, 43, 106, 1);
+}
+
+/* Стиль для модального окна */
+.modal {
+    display: none;
+    /* Изначально окно скрыто */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Полупрозрачный черный фон */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+    /* Отключаем скроллинг */
+
+
+}
+
+.modal-error {
+    display: none;
+    /* Изначально окно скрыто */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Полупрозрачный черный фон */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+    /* Отключаем скроллинг */
+}
+
+.modal-error.active {
+    display: flex;
+    /* Показываем окно при необходимости */
+}
+
+.modal-content {
+    background-color: white;
+    color: rgba(31, 43, 106, 1);
+    font-size: 1.25vw;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    cursor: default;
+    width: 44.64vw;
+
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content button {
+
+    font-weight: 400;
+    font-size: 0.73vw;
+    padding-left: 5.2vw;
+    padding-right: 5.2vw;
+    background-color: rgba(13, 76, 211, 1);
+    height: 2.6vw;
+    color: white;
+    border-radius: 0.26vw;
+    border: 0.05vw solid rgba(13, 76, 211, 1);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+
+#close {
+    cursor: pointer;
+}

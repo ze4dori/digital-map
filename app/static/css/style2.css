@@ -1,0 +1,1923 @@
+/*-----------------------------------------для главной-----------------*/
+
+.header-line-main {
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 3.125vw;
+
+    padding-left: 1.04vw;
+    padding-right: 1.04vw;
+
+    font-family: "Inter", sans-serif;
+    color: rgba(31, 43, 106, 1);
+
+
+}
+
+.header-line-main button {
+
+    height: 2.08vw;
+
+    color: rgb(31 43 106 /100%);
+    background-color: #FFFF;
+    text-decoration: none;
+
+    margin-right: 1.04vw;
+    border: 0.078vw solid rgba(31, 43, 106, 0.5);
+
+    border-radius: 0.26vw;
+    padding: 0.74vh 0.74vh;
+    padding-left: 1.04vw;
+    padding-right: 1.04vw;
+
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter;
+    /*Доступная замена*/
+}
+
+.header-line-main button:hover {
+    background-color: rgba(57, 56, 212, 1);
+    border-color: rgba(57, 56, 212, 1);
+    color: white;
+}
+
+.header-line-main button:hover rect {
+    fill: white;
+}
+
+.str-main {
+    background-color: #F0F2FF;
+    padding-left: 1.042vw;
+    padding-right: 1.042vw;
+
+    font-family: "Inter", sans-serif;
+    color: rgba(31, 43, 106, 1);
+
+    padding-top: 2.6vw;
+
+}
+
+
+/* Стилизация ползунка прокрутки */
+::-webkit-scrollbar {
+    width: 0.36vw;
+    /* Ширина ползунка */
+}
+
+::-webkit-scrollbar-track {
+    background: #F0F2FF;
+    /* Цвет фона трека */
+    border-radius: 0.32vh;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1F2B6A;
+    /* Цвет ползунка */
+    border-radius: 0.32vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Цвет ползунка при наведении */
+}
+
+.str-main h1 {
+    font-size: 3.33vw;
+    font-weight: 400;
+    margin-top: 0vw;
+    margin-bottom: 2.6vw;
+    cursor: default;
+}
+
+.str-main h2 {
+    padding-top: 1.56vw;
+    margin-top: 0vw;
+
+    font-size: 1.25vw;
+    font-weight: 500;
+}
+
+.blockonmain {
+
+    background-color: white;
+    border-radius: 0.26vw;
+    box-shadow: 0 0 0.26vw rgb(143 143 143 /35%);
+
+    padding-left: 1.56vw;
+}
+
+.blockonmain button:hover {
+    background-color: rgba(57, 56, 212, 1);
+    color: white;
+
+}
+
+.mini-map {
+    width: 47.9vw;
+    height: 28.23;
+
+    background-image: url(../images/map.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+
+}
+
+.mini-map img {
+    height: 23.54vw;
+}
+
+.mini-map button {
+    height: 2.14vw;
+    width: 10.68vw;
+
+    color: rgba(31, 43, 106, 1);
+    background-color: #FFFF;
+    text-decoration: none;
+
+    border: 0.078vw solid rgba(31, 43, 106, 0.5);
+    border-radius: 0.26vw;
+    padding: 0.74vh 0.74vh;
+    padding-left: 1.04vw;
+    padding-right: 1.04vw;
+
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter;
+
+    margin-top: 20.6vw;
+    margin-right: 1.56vw;
+    float: right;
+}
+
+.active-mini-map {
+
+    width: 47.9vw;
+    height: 28.23;
+
+    background-image: url(../images/activemap.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+
+}
+
+.active-mini-map img {
+    height: 23.54vw;
+}
+
+.active-mini-map button {
+    height: 2.19vw;
+    width: 10.68vw;
+
+    background-color: rgba(125, 159, 232, 1);
+    border-color: rgba(125, 159, 232, 0.5);
+    color: white;
+
+    text-decoration: none;
+
+    border: 0.078vw solid;
+    border-radius: 0.26vw;
+    padding: 0.74vh 0.74vh;
+    padding-left: 1.04vw;
+    padding-right: 1.04vw;
+
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter;
+
+    margin-top: 20.6vw;
+    margin-right: 1.56vw;
+    float: right;
+}
+
+
+.link-app {
+    height: 2.08vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1.5625vw;
+
+    border: 0.052vw solid rgba(31, 43, 106, 0.5);
+    border-radius: 0.26vw;
+
+    margin-bottom: 0.52vw;
+    padding-left: 1.042vw;
+    padding-right: 1.042vw;
+
+}
+
+.link-app:hover {
+    background-color: rgba(57, 56, 212, 1);
+    border-color: rgba(57, 56, 212, 1);
+    color: white;
+
+}
+
+.link-app:hover path {
+    stroke: white;
+}
+
+.link-app-active {
+    height: 2.08vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1.5625vw;
+
+    border: 0.052vw solid rgba(125, 159, 232, 0.5);
+    border-radius: 0.26vw;
+
+    margin-bottom: 0.52vw;
+    padding-left: 1.042vw;
+    padding-right: 1.042vw;
+
+    background-color: rgba(125, 159, 232, 1);
+    color: white;
+
+}
+
+.link-app-active:hover {
+    border-color: rgba(57, 56, 212, 1);
+    background-color: rgba(57, 56, 212, 1);
+
+}
+
+.card-inactive {
+    background-color: white;
+    background-size: 100% 100%;
+    color: rgba(31, 43, 106, 1);
+
+    width: 22.9vw;
+    margin-left: 2.08vw;
+
+    padding-left: 1.56vw;
+    padding-right: 1.56vw;
+
+    padding-top: 1.56vw;
+    padding-bottom: 1.56vw;
+
+    border-radius: 0.26vw;
+    box-shadow: 0 0 0.26vw rgb(143 143 143 /35%);
+}
+
+.card-inactive h3 {
+    font-size: 0.83vw;
+    font-weight: 500;
+
+    margin: 0vw;
+}
+
+.card-inactive p {
+    font-size: 0.73vw;
+    font-weight: 400;
+
+    margin-top: 1.04vw;
+}
+
+
+.card {
+    /* background-image: url(../images/card_background.png); */
+    background-size: 100% 100%;
+
+    height: 13vw;
+    width: 22.9vw;
+    margin-left: 2.08vw;
+
+    padding-left: 1.56vw;
+    padding-right: 1.56vw;
+
+    padding-top: 1.56vw;
+
+    border-radius: 0.26vw;
+    box-shadow: 0 0 0.26vw rgb(143 143 143 /35%);
+
+    color: white;
+}
+
+.card h3 {
+    font-size: 0.83vw;
+    font-weight: 500;
+
+    margin: 0vw;
+}
+
+.card p {
+    font-size: 0.73vw;
+    font-weight: 400;
+
+    margin-top: 1.04vw;
+}
+
+.news {
+    width: 22.9vw;
+    height: 24vw;
+
+    margin-right: 2.08vw;
+
+    background-color: white;
+
+    border-radius: 0.26vw;
+    box-shadow: 0 0 0.26vw rgb(143 143 143 /35%);
+
+}
+
+.news img {
+    height: 13vw;
+    width: 100%;
+
+    object-fit: cover;
+
+    border-radius: 0.26vw 0.26vw 0vw 0vw;
+
+}
+
+.news h3 {
+
+    padding-left: 1.56vw;
+    padding-right: 1.56vw;
+
+    margin-top: 1.56vw;
+    margin-bottom: 0vw;
+
+    font-size: 0.83vw;
+    font-weight: 500;
+}
+
+.news p {
+
+    margin-top: 0.52vw;
+    padding-left: 1.56vw;
+    padding-right: 1.56vw;
+
+    font-size: 0.73vw;
+    font-weight: 400;
+}
+
+#news button {
+    height: 2.19vw;
+    width: 22.92vw;
+
+    color: rgba(31, 43, 106, 1);
+    background-color: #FFFF;
+
+    text-decoration: none;
+
+    border: 0.078vw solid rgba(31, 43, 106, 0.5);
+    border-radius: 0.26vw;
+    padding: 0.74vh 0.74vh;
+
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter;
+
+    margin-top: 1.56vw;
+}
+
+#news button:hover {
+    background-color: rgba(57, 56, 212, 1);
+    color: white;
+
+}
+
+#news-active button {
+    height: 2.19vw;
+    width: 22.92vw;
+
+    background-color: rgba(125, 159, 232, 1);
+    color: white;
+
+    text-decoration: none;
+
+    border: 0.078vw solid rgba(125, 159, 232, 1);
+    border-radius: 0.26vw;
+    padding: 0.74vh 0.74vh;
+
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter;
+
+    margin-top: 1.56vw;
+
+}
+
+#news-active button:hover {
+    background-color: rgba(57, 56, 212, 1);
+    border-color: rgba(57, 56, 212, 1);
+    color: white;
+}
+
+.QA {
+    background-color: white;
+    width: 44.79vw;
+
+    padding-left: 1.56vw;
+    padding-right: 1.56vw;
+
+    border-radius: 0.26vw;
+    box-shadow: 0 0 0.26vw rgb(143 143 143 /35%);
+
+    margin-bottom: 1.04vw;
+
+}
+
+.QA h3 {
+    font-size: 0.83vw;
+    font-weight: 500;
+}
+
+.footer {
+    background-color: rgba(125, 159, 232, 1);
+
+    padding-left: 1.042vw;
+    padding-right: 1.042vw;
+
+    font-family: "Inter", sans-serif;
+
+    height: 10.850vw;
+
+}
+
+.footer img {
+    width: 0.99vw;
+    height: 0.99vw;
+}
+
+.footer h3 {
+    font-size: 1.25vw;
+    font-weight: 500;
+    color: white;
+
+    margin-top: 3.65vw;
+}
+
+.footer a {
+    font-size: 0.83vw;
+    font-weight: 400;
+    color: white;
+
+    text-decoration: none;
+}
+
+.footer p {
+    font-size: 0.83vw;
+    font-weight: 400;
+    color: white;
+}
+
+
+/*------Для заявления------*/
+
+.header-line-app {
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 3.125vw;
+
+    padding-left: 1.04vw;
+    padding-right: 1.04vw;
+
+    font-family: "Inter", sans-serif;
+    color: rgba(31, 43, 106, 1);
+
+
+}
+
+.header-line-app button {
+
+    height: 2.08vw;
+
+    color: rgb(31 43 106 /100%);
+    background-color: #FFFF;
+    text-decoration: none;
+
+    margin-right: 1.04vw;
+    border: 0.078vw solid rgba(31, 43, 106, 0.5);
+
+    border-radius: 0.26vw;
+    padding: 0.74vh 0.74vh;
+    padding-left: 1.04vw;
+    padding-right: 1.04vw;
+
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter;
+    /*Доступная замена*/
+}
+
+.header-line-app button:hover {
+    background-color: rgba(57, 56, 212, 1);
+    border-color: rgba(57, 56, 212, 1);
+    color: white;
+}
+
+.header-line-app:hover rect {
+    fill: white;
+}
+
+
+.str-app {
+    background-color: rgba(240, 242, 255, 1);
+    padding-left: 1.042vw;
+    padding-right: 1.042vw;
+
+    font-family: "Inter", sans-serif;
+    color: rgba(31, 43, 106, 1);
+
+    padding-top: 2.6vw;
+
+}
+
+.app-card {
+    background-color: white;
+
+    width: 31.25vw;
+    height: 31.77vw;
+
+    border-radius: 0.26vw;
+    box-shadow: 0 0 0.26vw rgb(143 143 143 /35%);
+
+    padding-left: 1.56vw;
+    padding-right: 1.56vw;
+
+    margin-top: 2.6vw;
+    margin-bottom: 2.6vw;
+
+
+}
+
+.app-card img {
+    width: 100%;
+}
+
+.app-card h2 {
+    font-size: 1.25vw;
+    font-weight: 400;
+}
+
+.app-card p {
+    font-size: 0.73vw;
+    font-weight: 400;
+}
+
+.app-card button {
+
+    font-size: 0.73vw;
+    border: 0;
+    background-color: rgba(13, 76, 211, 1);
+    width: 27.6vw;
+    height: 2.34vw;
+    color: white;
+    border-radius: 0.26vw;
+    margin-top: 1vw;
+
+}
+
+.app-cards {
+    background-color: white;
+
+    width: 31.25vw;
+    height: 31.77vw;
+
+    border-radius: 0.26vw;
+    box-shadow: 0 0 0.26vw rgb(143 143 143 /35%);
+
+
+    margin-top: 2.6vw;
+    margin-bottom: 2.6vw;
+
+
+}
+
+.app-cards img {
+    width: 100%;
+}
+
+.app-cards h2 {
+    font-size: 1.25vw;
+    font-weight: 400;
+
+    padding-left: 1.56vw;
+    padding-right: 1.56vw;
+}
+
+.app-cards p {
+    font-size: 0.73vw;
+    font-weight: 400;
+
+    padding-left: 1.56vw;
+    padding-right: 1.56vw;
+}
+
+.app-cards button {
+    font-size: 0.73vw;
+    background-color: white;
+    height: 2.29vw;
+    color: rgba(31, 43, 106, 1);
+    border-radius: 0.26vw;
+    border: 0.05vw solid rgba(31, 43, 106, 0.5);
+
+    margin-right: 1.56vw;
+    margin-top: 1vw;
+
+    padding-left: 1.04vw;
+    padding-right: 1.04vw;
+
+    float: right;
+}
+
+.knopki-form {
+    display: flex;
+    width: 60.42vw;
+    flex-direction: row-reverse;
+    margin-top: 2vw;
+}
+
+.blue-button {
+    width: 23.23vw;
+    background-color: rgba(57, 56, 212, 1);
+    color: white;
+    border: 0.078vw solid rgba(57, 56, 212, 1);
+    cursor: pointer;
+}
+
+.blue-button:hover {
+    background-color: rgba(31, 43, 106, 1);
+    border-color: rgba(31, 43, 106, 1);
+}
+
+.white-button-no-hover {
+    width: 10.68vw;
+
+    color: rgba(31, 43, 106, 1);
+    background-color: #FFFF;
+    border: 0.078vw solid rgba(31, 43, 106, 0.5);
+}
+
+.white-button {
+    width: 10.68vw;
+
+    color: rgba(31, 43, 106, 1);
+    background-color: #FFFF;
+    border: 0.078vw solid rgba(31, 43, 106, 0.5);
+}
+
+.white-button:hover {
+    background-color: rgba(57, 56, 212, 1);
+    border-color: rgba(57, 56, 212, 1);
+    color: white;
+}
+
+
+
+.burger-menu {
+    width: 13.073vw;
+    height: 11.35vw;
+
+    background-color: white;
+
+    top: 4vw;
+    right: 1.5vw;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-size: 0.73vw;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: rgba(31, 43, 106, 1);
+
+    padding-left: 1.04vw;
+    padding-bottom: 1.04vw;
+
+    border-radius: 0.26vw;
+    box-shadow: 0 0 0.26vw rgb(143 143 143 /35%);
+
+}
+
+.burger-menu a {
+    text-decoration: none;
+    color: rgba(31, 43, 106, 1);
+}
+
+button.menu-burger-item {
+    font-size: 0.73vw;
+}
+
+
+/* Медиа запрос для экранов менее 450px, но коэффициент 3.74. Мобильная версия */
+@media (max-width: 450px) {
+
+    .header-line-main {
+        /* height: 64px !important; */
+        height: 17.11vw !important;
+    }
+
+    #myButton-burger-menu {
+        width: 31.55vw !important;
+        height: 10.7vw !important;
+        font-size: 3.74vw !important;
+        border-radius: 1.34vw !important;
+        padding-left: 5.35vw !important;
+        padding-right: 5.35vw !important;
+        margin-left: 15vw !important;
+
+    }
+
+    .myButton-enter {
+        width: 31.55vw !important;
+        height: 10.7vw !important;
+        font-size: 3.74vw !important;
+        border-radius: 1.34vw !important;
+        padding-left: 5.35vw !important;
+        padding-right: 5.35vw !important;
+        margin-left: 15vw !important;
+
+    }
+
+    #myButton-burger-menu svg {
+        width: 6.68vw !important;
+        height: 4.28vw !important;
+
+    }
+
+    .header-line-main p {
+        left: 6.68vw !important;
+        top: 15vw !important;
+        font-size: 2.67vw !important;
+    }
+
+    .name img {
+        width: 17.91vw !important;
+
+    }
+
+    .name p {
+        font-size: 3.2vw !important;
+
+    }
+
+    .burger-menu {
+        z-index: 3;
+        top: 18.5vw;
+        width: 67.11vw;
+        height: 58.3vw;
+        font-size: 3.74vw;
+        padding-left: 5.35vw;
+        padding-bottom: 5.35vw;
+        border-radius: 1.34vw;
+    }
+
+    button.menu-burger-item {
+        font-size: 3.74vw;
+    }
+    .burger-menu p {
+        font-size: 4.28vw !important;
+    }
+
+    .footer {
+        height: 81.55vw;
+        justify-content: center !important;
+        align-items: flex-start !important;
+        flex-direction: column !important;
+
+    }
+
+    .footer h3 {
+        font-size: 4.28vw !important;
+    }
+
+    .footer p {
+        font-size: 3.2vw !important;
+    }
+
+    .footer a {
+        font-size: 3.2vw !important;
+    }
+
+    .mini-menu {
+        flex-wrap: wrap;
+    }
+
+
+    .footer img {
+        width: 5.08vw !important;
+        height: 5.08vw !important;
+        margin-left: 1vw;
+    }
+
+
+    .header-line-main p {
+        left: 2.67vw !important;
+        ;
+    }
+
+    .str-main h1 {
+
+        font-size: 6.42vw !important;
+        margin-left: 1.63vw !important;
+        margin-right: 1.63vw !important;
+        margin-top: 5.35vw !important;
+        margin-bottom: 5.35vw !important;
+    }
+
+    .map-text-app {
+        flex-direction: column !important;
+    }
+
+    .active-mini-map {
+        height: 87.43vw !important;
+
+    }
+
+    .active-mini-map button {
+        height: 10.16vw !important;
+        width: 44.92vw !important;
+        border-radius: 1.34vw !important;
+        font-size: 3.2vw !important;
+        margin-top: 60vw !important;
+        margin-right: 5.35vw !important;
+    }
+
+    .blockonmain {
+        margin-left: 0vw !important;
+        margin-bottom: 5.35vw !important;
+        width: 92.6vw !important;
+        padding-left: 5.35vw !important;
+        border-radius: 1.34vw !important;
+    }
+
+    .blockonmain h2 {
+        font-size: 4.28vw !important;
+        padding-top: 5.35vw;
+    }
+
+    .blockonmain p {
+        font-size: 3.74vw !important;
+        margin-right: 5.35vw !important;
+    }
+
+    .about {
+        height: 81.55vw !important;
+    }
+
+    .app {
+        height: 62.3vw !important;
+    }
+
+    .link-app-active {
+        height: 10.16vw !important;
+        margin-right: 5.35vw !important;
+        border-radius: 1.34vw !important;
+        padding-left: 2.67vw !important;
+        padding-right: 2.67vw !important;
+        margin-bottom: 5.35vw !important;
+    }
+
+    .link-app-active p {
+        font-size: 3.2vw !important;
+    }
+
+    .link-app-active svg {
+        width: 4.28vw !important;
+        height: 2.67vw !important;
+    }
+
+    .aboutweb h2 {
+        font-size: 4.28vw !important;
+
+    }
+
+    .cards {
+        flex-direction: column !important;
+
+    }
+
+    .card {
+        margin-left: 0vw;
+        height: 37.43vw !important;
+        width: 87vw !important;
+        margin-bottom: 5.35vw;
+        border-radius: 1.34vw !important;
+        padding-left: 5.35vw !important;
+        padding-right: 5.35vw !important;
+        padding-top: 5.35vw !important;
+    }
+
+    .card h3 {
+        font-size: 3.74vw !important;
+        padding-bottom: 2.67vw !important;
+    }
+
+    .card p {
+        font-size: 3.2vw !important;
+    }
+
+    #news {
+        padding-bottom: 325vw !important;
+    }
+
+    #news h2 {
+        font-size: 4.28vw !important;
+    }
+
+    .news {
+        flex-direction: column !important;
+        height: 105vw !important;
+        width: 97.92vw !important;
+        border-radius: 1.34vw !important;
+        margin-left: 0vw !important;
+        margin-bottom: 2.67vw !important;
+    }
+
+    .news img {
+        height: 60.16vw !important;
+        border-radius: 1.34vw 1.34vw 0vw 0vw !important;
+
+    }
+
+    .news h3 {
+        padding-left: 5.35vw;
+        padding-right: 5.35vw;
+        margin-bottom: 4vw;
+        font-size: 3.74vw;
+    }
+
+    .news p {
+        padding-left: 5.35vw;
+        padding-right: 5.35vw;
+        font-size: 3.21vw;
+    }
+
+    .mini-map {
+        height: 87.43vw !important;
+
+    }
+
+    .mini-map button {
+        height: 10.16vw !important;
+        width: 44.92vw !important;
+        border-radius: 1.34vw !important;
+        font-size: 3.2vw !important;
+        margin-top: 60vw !important;
+        margin-right: 5.35vw !important;
+    }
+
+    .link-app {
+        height: 10.16vw !important;
+        margin-right: 5.35vw !important;
+        border-radius: 1.34vw !important;
+        padding-left: 2.67vw !important;
+        padding-right: 2.67vw !important;
+        margin-bottom: 5.35vw !important;
+    }
+
+    .link-app p {
+        font-size: 3.2vw !important;
+    }
+
+    .link-app svg {
+        width: 4.28vw !important;
+        height: 2.67vw !important;
+    }
+
+    .card-inactive {
+        margin-left: 0vw;
+        height: 37.43vw !important;
+        width: 87vw !important;
+        margin-bottom: 5.35vw;
+        border-radius: 1.34vw !important;
+        padding-left: 5.35vw !important;
+        padding-right: 5.35vw !important;
+        padding-top: 5.35vw !important;
+    }
+
+    .card-inactive h3 {
+        font-size: 3.74vw !important;
+        padding-bottom: 2.67vw !important;
+    }
+
+    .card-inactive p {
+        font-size: 3.2vw !important;
+    }
+
+    .modal-content {
+        width: 85vw !important;
+    }
+
+    .modal-content svg {
+        width: 5.35vw !important;
+        height: 5.35vw !important;
+    }
+
+    .modal-content p {
+        font-size: 4.28vw !important;
+
+    }
+
+    .modal-content button {
+        width: 72.23vw !important;
+        height: 16.04vw !important;
+        border-radius: 2.14vw !important;
+        font-size: 3.74vw !important;
+
+    }
+
+    .modal-content img {
+        width: 7.49vw !important;
+        margin-left: 0vw !important;
+        margin-right: 3.48vw !important;
+    }
+
+    .str-app {
+        padding-left: 5.34vw;
+        padding-right: 5.34vw;
+    }
+
+    .str-app h1 {
+        font-size: 6.42vw !important;
+        margin-top: 5.35vw !important;
+        margin-bottom: 5.35vw !important;
+    }
+
+    .app-cards {
+        width: 90vw !important;
+        height: auto;
+        border-radius: 1.34vw;
+    }
+
+    .app-cards h2 {
+        margin-top: 5.34vw;
+        font-size: 3.74vw;
+        padding-left: 5.34vw;
+        padding-right: 5.34vw;
+    }
+
+    .app-cards p {
+        margin-top: 5.34vw;
+        font-size: 3.74vw;
+        padding-left: 5.34vw;
+        padding-right: 5.34vw;
+    }
+
+    .app-countainer {
+        flex-direction: column !important;
+    }
+
+    .app-cards button {
+        width: 78.88vw;
+        height: 10.7vw;
+        border-radius: 1.34vw;
+        font-size: 3.74vw;
+        margin-bottom: 5.34vw;
+        margin-right: 5.34vw;
+    }
+
+    .str-name-apps {
+        width: auto !important;
+    }
+
+    .app-card {
+        width: 90vw !important;
+        height: auto !important;
+        padding-left: 5.35vw;
+        padding-right: 5.35vw;
+
+    }
+
+    .app-card h2 {
+        font-size: 4.28vw;
+    }
+
+    .app-card p {
+        font-size: 3.2vw;
+    }
+
+    .app-card img {
+        display: none;
+    }
+
+    .report-input {
+        width: 78.9vw !important;
+        border-radius: 1.34vw !important;
+        font-size: 3.2vw !important;
+        height: 9.89vw !important;
+        padding-left: 2.67vw !important;
+        padding-right: 2.67vw !important;
+        margin-top: 5.35vw !important;
+    }
+
+    .big-input {
+        height: 20vw !important;
+    }
+
+    .checkbox label {
+        width: 72.9vw !important;
+        font-size: 2.67vw !important;
+    }
+
+    input[type="checkbox"]+label::before {
+        width: 3.74vw !important;
+        height: 3.74vw !important;
+        border-radius: 0.54vw !important;
+    }
+
+    input[type="checkbox"]:checked+label::before {
+        background-size: 3.48vw 3.48vw !important;
+    }
+
+    input[type="checkbox"]+label {
+        padding-left: 5vw !important;
+    }
+
+    .checkbox {
+        margin-top: 5.35vw !important;
+    }
+
+    .app-card button {
+        font-size: 3.2vw !important;
+        width: 78.9vw;
+        height: 10.7vw;
+        border-radius: 1.34vw;
+        margin-top: 5.34vw;
+        margin-bottom: 5.34vw;
+    }
+
+    .add-app {
+        width: 90vw !important;
+        padding-left: 0vw !important;
+        padding-right: 0vw !important;
+    }
+
+    .content-add-app {
+        margin-right: 5.35vw;
+        margin-left: 5.35vw;
+        margin-top: 5.35vw;
+        margin-bottom: 5.35vw;
+    }
+
+    .app-card-big h2 {
+        margin: 0vw !important;
+        font-size: 4.28vw !important;
+    }
+
+    .Qs {
+        margin-top: 5.35vw;
+    }
+
+    .Qs p {
+        font-size: 3.21vw !important;
+    }
+
+    .Q {
+        width: 80vw;
+        margin-bottom: 5.35vw !important;
+    }
+
+    .Q p {
+        font-size: 3.21vw !important;
+    }
+
+    .add {
+        margin-top: 2.67vw !important;
+    }
+
+    .mini-input {
+        width: 29vw !important;
+    }
+
+    .search-container {
+        width: 78.9vw !important;
+
+    }
+
+    .search-input {
+        width: 78.9vw !important;
+        border-radius: 1.34vw !important;
+        font-size: 3.2vw !important;
+        height: 9.89vw !important;
+        padding-left: 2.67vw !important;
+        padding-right: 2.67vw !important;
+    }
+
+    .tag {
+        font-size: 3vw !important;
+    }
+
+    .dropdown {
+        height: 20vw !important;
+        width: 78.6vw !important;
+    }
+
+    .dropdown ul {
+        font-size: 3.21vw !important;
+    }
+
+    .knopki-form {
+        width: auto;
+        flex-direction: row;
+    }
+
+    .knopki-form button {
+        width: 78.88vw !important;
+        height: 10.7vw !important;
+        border-radius: 1.34vw !important;
+        font-size: 3.74vw !important;
+
+    }
+
+    .StrokaPoisk svg {
+        right: 2vw !important;
+        width: 4vw;
+        height: 3vw;
+        top: 4.5vw !important;
+    }
+
+    .name-container {
+        width: 78.88vw !important;
+    }
+
+    .reg-container {
+        width: 78.9vw !important;
+        height: auto !important;
+        border-radius: 1.34vw !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+    }
+
+    #regions-container h2 {
+        font-size: 4.29vw !important;
+        margin-left: 5.35vw !important;
+        width: 60vw;
+    }
+
+    #regions-container h3 {
+        font-size: 3.74vw !important;
+        margin-left: 5.35vw !important;
+        margin-top: 0vw !important;
+        margin-bottom: 0vw !important;
+    }
+
+    #regions-container p {
+        font-size: 3.21vw !important;
+        margin-left: 5.35vw !important;
+    }
+
+    .reg-container img {
+        position: absolute !important;
+        width: 6.69vw !important;
+        height: 6.69vw !important;
+        margin-left: 67vw !important;
+        margin-top: 3vw !important;
+    }
+
+}
+
+/* Конец стилей для мобильной версии меню, шапки и подвала */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-item {
+    height: 2.08vw;
+
+    color: rgb(31 43 106 /50%);
+    background-color: #FFFF;
+    text-decoration: none;
+
+    margin-right: 1.04vw;
+    border: 0.078vw solid #F0F2FF;
+    border-radius: 0.26vw;
+    padding: 0.74vh 0.74vh;
+    padding-left: 1.04vw;
+    padding-right: 1.04vw;
+
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter;
+    /*Доступная замена*/
+}
+
+
+
+.report-input {
+    margin-top: 1.04vw;
+    /* margin-bottom: 1.56vw; */
+    border: 0.052vw solid rgba(240, 242, 255, 1);
+    border-radius: 0.26vw;
+    outline: none;
+    /* width: 27.6vw; */
+    width: 60.42vw;
+    box-sizing: border-box;
+
+
+    color: rgba(56, 56, 116, 1);
+    font-size: 0.73vw;
+
+    height: 2.08vw;
+    padding-left: 1.04vw;
+}
+
+.report-input::placeholder {
+    color: rgb(31 43 106 /50%);
+    margin-top: 1vw;
+}
+
+/* Скрываем оригинальный чекбокс */
+input[type="checkbox"] {
+    display: none;
+    order: 1;
+}
+
+/* Создаем новый квадратный чекбокс */
+input[type="checkbox"]+label {
+    position: relative;
+    padding-left: 1.56vw;
+    /* Пространство для нового чекбокса */
+    cursor: pointer;
+}
+
+input[type="checkbox"]+label::before {
+    content: "";
+    background-color: #F0F2FF;
+    position: absolute;
+    left: 0;
+    top: 0.5vw;
+    width: 1.04vw;
+    height: 1.04vw;
+    border: 0.12vw solid rgba(31, 43, 106, 0.5);
+    border-radius: 0.16vw;
+}
+
+/* Стилизуем чекбокс, когда он отмечен*/
+input[type="checkbox"]:checked+label::before {
+    background-image: url(../images/checked.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.73vw 0.73vw;
+}
+
+
+.checkbox label {
+    order: 2;
+    width: 19.53vw;
+    padding: 0.2vw;
+    font-size: 0.73vw;
+}
+
+.checkbox {
+
+    color: rgb(31 43 106 /40%);
+    margin-top: 1.04vw;
+    /* margin-bottom: 1.56vw; */
+}
+
+/*Для нового поиска*/
+
+.search-container {
+
+    color: rgb(31 43 106 /40%);
+
+    margin-top: 1.04vw;
+    margin-bottom: 1.56vw;
+
+    width: 60.42vw;
+
+
+}
+
+.search-box {
+    position: relative;
+    margin-top: 0.52vw;
+}
+
+/* .StrokaPoisk{
+    margin-top: 3px;
+    border: 0.052vw solid rgba(240, 242, 255, 1);
+    border-radius: 0.26vw;
+} */
+
+.selected-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2vw;
+}
+
+.selected-tags .tag {
+    background-color: #e0e0e0;
+    border-radius: 0.16vw;
+    padding: 0.2vw;
+    font-size: 0.73vw;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.selected-tags .tag::after {
+    content: '×';
+    margin-left: 0.26vw;
+    cursor: pointer;
+}
+
+.search-input {
+    margin-top: 3px;
+    border: 0.052vw solid rgba(240, 242, 255, 1);
+    border-radius: 0.26vw;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+
+
+    color: rgba(31, 43, 106, 1);
+    font-size: 0.73vw;
+
+    height: 2.08vw;
+    padding-left: 1.04vw;
+}
+
+.search-input::placeholder {
+    color: rgb(31 43 106 /50%);
+}
+
+.dropdown {
+    /*display: block;*/
+    /*position: absolute;*/
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-top: none;
+    background-color: #fff;
+    z-index: 1000;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    height: 9.9vw;
+
+    border: 0.052vw solid rgba(240, 242, 255, 1);
+    border-radius: 0.26vw;
+
+    margin-top: 0.46vw;
+}
+
+.dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.73vw;
+}
+
+.dropdown ul li {
+    padding: 0.42vw;
+    cursor: pointer;
+}
+
+.dropdown ul li:hover {
+    background-color: rgba(240, 242, 255, 1);
+}
+
+.no-results {
+    padding: 0.42vw;
+    color: #888;
+    font-size: 0.73vw;
+}
+
+/* Стилизация ползунка прокрутки */
+.dropdown::-webkit-scrollbar {
+    width: 0.36vw;
+    /* Ширина ползунка */
+}
+
+.dropdown::-webkit-scrollbar-track {
+    background: #F0F2FF;
+    /* Цвет фона трека */
+    border-radius: 0.32vh;
+}
+
+.dropdown::-webkit-scrollbar-thumb {
+    background: #1F2B6A;
+    /* Цвет ползунка */
+    border-radius: 0.32vh;
+}
+
+.dropdown::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Цвет ползунка при наведении */
+}
+
+/* Стили для подсветки совпадений */
+.highlight {
+    background-color: rgba(240, 242, 255, 1);
+    border-radius: 0.26vw;
+}
+
+.listContainer {
+    padding: 0;
+}
+
+.reg-container {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 6.3vw;
+    width: 60.42vw;
+    margin-bottom: 1.04vw;
+
+    border-radius: 0.26vw;
+    box-shadow: 0 0 0.26vw rgb(143 143 143 /35%);
+}
+
+
+/* Стиль для модального окна */
+.modal {
+    display: none;
+    /* Изначально окно скрыто */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Полупрозрачный черный фон */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+    /* Отключаем скроллинг */
+
+
+}
+
+.modal-error {
+    display: none;
+    /* Изначально окно скрыто */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Полупрозрачный черный фон */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+    /* Отключаем скроллинг */
+}
+
+.modal-error.active {
+    display: flex;
+    /* Показываем окно при необходимости */
+}
+
+.modal-content {
+    background-color: white;
+    color: rgba(31, 43, 106, 1);
+    font-size: 1.25vw;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    cursor: default;
+    width: 44.64vw;
+
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content button {
+
+    font-weight: 400;
+    font-size: 0.73vw;
+    padding-left: 5.2vw;
+    padding-right: 5.2vw;
+    background-color: rgba(13, 76, 211, 1);
+    height: 2.6vw;
+    color: white;
+    border-radius: 0.26vw;
+    border: 0.05vw solid rgba(13, 76, 211, 1);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+
+#close {
+    cursor: pointer;
+}
+
+
+/* Для форм заявления */
+
+.app-card-big {
+    background-color: white;
+
+    width: 60.42vw;
+
+    border-radius: 0.26vw;
+    box-shadow: 0 0 0.26vw rgb(143 143 143 /35%);
+
+    padding-left: 2.6vw;
+    padding-right: 2.6vw;
+
+    margin-top: 2.6vw;
+    margin-bottom: 2.6vw;
+}
+
+.app-card-big h2 {
+    font-size: 1.25vw;
+    font-weight: 400;
+    color: rgba(31, 43, 106, 1);
+}
+
+.app-card-big p {
+    margin: 0vw;
+    font-size: 0.73vw;
+    font-weight: 400;
+    color: rgba(56, 56, 116, 1);
+}
+
+.app-card-big button {
+
+    height: 2.19vw;
+    text-decoration: none;
+
+    margin-left: 1.04vw;
+    margin-bottom: 1.56vw;
+
+    border-radius: 0.26vw;
+    padding: 0.74vh 0.74vh;
+    padding-left: 1.04vw;
+    padding-right: 1.04vw;
+
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter;
+    /*Доступная замена*/
+}
+
+#regions-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: default;
+}
+
+#regions-container h2 {
+    font-size: 1.04vw;
+    font-weight: 400;
+}
+
+#regions-container h3 {
+    font-size: 1.04vw;
+    font-weight: 500;
+}
+
+#regions-container p {
+    font-size: 0.73vw;
+    font-weight: 400;
+    color: rgba(31, 43, 106, 0.5);
+}
+
+.Q {
+    margin-bottom: 1.56vw;
+}
+
+.Q p {
+    color: rgba(56, 56, 116, 1);
+}
+
+.rotate {
+    transform: rotate(180deg);
+    /* transition: transform 0.3s ease; */
+}
+
+
+
+/*Админ-панель*/
+/*Для вывода таблицы*/
+.table-style {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-style th,
+.table-style td {
+    border: 0.1vw solid #ddd;
+    padding: 0.5vw;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    color: rgba(31, 43, 106, 1);
+    font-weight: 400;
+    font-size: 0.73vw;
+}
+
+.table-style th {
+    background-color: rgba(31, 43, 106, 0.2);
+}
+
+.Q-admin {
+
+    margin-bottom: 0vw;
+
+    font-family: "Inter", sans-serif;
+    color: rgba(31, 43, 106, 1);
+    font-weight: 400;
+    font-size: 0.73vw;
+}
+
+.container-3 {
+    display: flex;
+    align-items: baseline;
+
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.toggle-container {
+    position: relative;
+    width: 2.6vw;
+    height: 1.3vw;
+    background-color: rgba(240, 242, 255, 1);
+    border-radius: 5.2vw;
+    overflow: hidden;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 0.052vw;
+    left: 0.052vw;
+    width: 1.2vw;
+    height: 1.2vw;
+    background-color: rgba(31, 43, 106, 1);
+    border-radius: 5.2vw;
+    transition: transform 0.3s ease;
+}
+
+.toggle-button.active {
+    transform: translateX(1.3vw);
+}
+
+.label {
+    transform: translateY(-50%);
+}
+
+.label-left {
+    color: rgba(31, 43, 106, 1);
+    /* Темносиний цвет */
+    margin-right: 0.42vw;
+}
+
+.label-right {
+    color: rgba(31, 43, 106, 0.5);
+    /* Голубой цвет */
+    margin-left: 0.42vw;
+}
+
+/*Для входа*/
+
+.form {
+    --bg-light: #efefef;
+    --bg-dark: white;
+    --clr: rgba(31, 43, 106, 1);
+    --clr-alpha: #9c9c9c60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+
+    margin-top: 10vw;
+    margin-left: 38vw;
+}
+
+.form .input-span {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form input[type="email"],
+.form input[type="password"] {
+    border-radius: 0.5rem;
+    padding: 1rem 0.75rem;
+
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--clr-alpha);
+    outline: 2px solid var(--bg-dark);
+}
+
+.form input[type="email"]:focus,
+.form input[type="password"]:focus {
+    outline: 2px solid var(--clr);
+}
+
+.label {
+    align-self: flex-start;
+    color: var(--clr);
+    font-weight: 600;
+}
+
+.form .submit {
+    padding: 1rem 0.75rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 3rem;
+    background-color: var(--bg-dark);
+    color: var(--bg-light);
+    border: none;
+    cursor: pointer;
+    transition: all 300ms;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form .submit:hover {
+    background-color: var(--clr);
+    color: var(--bg-dark);
+}
+
+.span {
+    text-decoration: none;
+    color: var(--bg-dark);
+}
+
+.span a {
+    color: var(--clr);
+}
+
+.b-admin {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.b-admin button {
+    height: 2.08vw;
+
+    color: rgb(31 43 106 /100%);
+    background-color: #FFFF;
+    text-decoration: none;
+
+    margin-right: 1.04vw;
+    border: 0.078vw solid rgba(31, 43, 106, 0.5);
+
+    border-radius: 0.26vw;
+    padding: 0.74vh 0.74vh;
+    padding-left: 1.04vw;
+    padding-right: 1.04vw;
+
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter;
+}
+
+.poisk-b {
+    height: 2.08vw;
+
+    color: rgb(31 43 106 /100%);
+    background-color: #FFFF;
+    text-decoration: none;
+
+    margin-right: 1.04vw;
+    border: 0.078vw solid rgba(31, 43, 106, 0.5);
+
+    border-radius: 0.26vw;
+    padding: 0.74vh 0.74vh;
+    padding-left: 1.04vw;
+    padding-right: 1.04vw;
+
+    font-weight: 400;
+    font-size: 0.73vw;
+    font-family: Inter;
+}
